@@ -1,12 +1,10 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 
 function Header(props) {
-    const navigate = useNavigate();
+
     return (
 
         <React.Fragment >
@@ -16,16 +14,10 @@ function Header(props) {
                     component="h2"
                     variant="h2"
                     align="center"
-                    // noWrap
                     sx={{ flex: 1, letterSpacing: 6 }}
                 >
-                    Codescape
+                    Soccer Team Name Here
                 </Typography>
-
-                
-                <Button variant="contained" color="secondary" size="small" onClick={() => navigate('/login/Signup')}>
-                    Sign up
-                </Button>
 
             </Toolbar>
             <Toolbar
