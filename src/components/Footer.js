@@ -14,10 +14,8 @@ function Copyright() {
   );
 }
 
-export default function StickyFooter({puzzleImage}) {
-  if (puzzleImage===true) {
-    return (<></>)
-  } else {
+export default function StickyFooter({props}) {
+
   return (
     <Box
       sx={{
@@ -25,7 +23,6 @@ export default function StickyFooter({puzzleImage}) {
         flexDirection: 'column',
         minHeight: '100vh',
       }}
-      
     >
  
       <Box
@@ -47,5 +44,4 @@ export default function StickyFooter({puzzleImage}) {
       </Box>
     </Box>
   );
-}
 }

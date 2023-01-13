@@ -8,7 +8,7 @@ function Header(props) {
     return (
 
         <React.Fragment >
-            <Toolbar sx={{ borderBottom: 1, borderColor: 'divider', bgcolor: "#4db6ac" }}>
+            <Toolbar sx={{ border: 5 , borderColor: 'primary.main'}}>
                 <Typography
 
                     component="h2"

@@ -1,10 +1,9 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 
-export default function Home() {
+export default function Home(props) {
     return (
         <Box sx={{
-            bgcolor: 'background.paper',
             pt: 8,
             pb: 6,
         }}

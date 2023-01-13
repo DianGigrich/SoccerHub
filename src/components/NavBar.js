@@ -21,12 +21,13 @@ export default function Navbar(props) {
         value={value}
         variant="fullWidth"
         onChange={handleTabChange}
-        indicatorColor="secondary"
-        aria-label="secondary tabs example"
+        indicatorColor="primary"
+        aria-label="secondary tabs"
+        sx={{ border: 5 , borderColor: 'primary.main'}}
       >
-        <Tab textColor="primary" value="Home" label="Home" onClick={() => navigate('/')} />
+        <Tab textColor="inherit" value="Home" label="Home" onClick={() => navigate('/')} />
 
-        <Tab textColor="primary" value="Games" label="Games" onClick={() => navigate('/Games')} />
+        <Tab textColor="inherit" value="Games" label="Games" onClick={() => navigate('/Games')} />
 
         <Tab textColor="primary" value="Resources" label="Resources" onClick={() => navigate('/Resources')} />
       </Tabs>

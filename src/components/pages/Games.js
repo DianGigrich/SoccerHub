@@ -3,10 +3,9 @@ import { Box, Container, Grid, Card, CardContent, Typography } from '@mui/materi
 
 // TODO: create table instead of cards
 
-export default function Home() {
+export default function Home(props) {
     return (
         <Box sx={{
-            bgcolor: 'background.paper',
             pt: 8,
             pb: 6,
         }}
@@ -23,7 +22,7 @@ export default function Home() {
                     Games
                 </Typography>
             </Container>
-            <Grid container spacing={2} sx={{ py: 8, bgcolor: "#83ccc5" }}>
+            <Grid container spacing={2} sx={{ py: 8, bgcolor: "#ccbc94" }}>
                 <Grid item xs={12} sm={6} md={3}>
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
