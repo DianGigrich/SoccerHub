@@ -1,18 +1,18 @@
 import * as React from 'react';
-import { Box, Container, Typography} from '@mui/material/';
+import { Box, Container, Typography, Link} from '@mui/material/';
 
-// function Copyright() {
-//   return (
-//     <Typography variant="body2" color="text.secondary">
-//       {'Copyright © '}
-//        <Link color="inherit" href="https://github.com/DianGigrich/Codescape/">
-//        Codescape
-//       </Link>{' '}
-//       {new Date().getFullYear()}
-//       {'.'}
-//     </Typography>
-//   );
-// }
+function Copyright() {
+  return (
+    <Typography variant="body2" color="text.secondary">
+      {'Copyright © '}
+       <Link color="inherit" href="https://github.com/DianGigrich/Codescape/">
+       Codescape
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 export default function StickyFooter({puzzleImage}) {
   if (puzzleImage===true) {

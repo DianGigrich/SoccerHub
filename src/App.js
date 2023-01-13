@@ -1,6 +1,6 @@
 
-import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StickyFooter from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -14,23 +14,22 @@ import { Container } from '@mui/material/';
 
 function App() {
 
-    return (
-        <Container>
-            <Router>
+  return (
+    <Container>
+      <CssBaseline />
+      <Router>
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/list" element={<List />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="*" element={<h1>404</h1>} />
+        </Routes>
+        <StickyFooter />
+      </Router>
+    </Container>
+  );
+}
 
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/list" element={<List />} />
-                <Route path="/resources" element={<Resources />} />
-                <Route path="*" element={<h1>404</h1>} />
-              </Routes>
-
-            </Router>
-
-    
-        </Container>
-      );
-    }
-    
-    export default App;
-    
+export default App;
