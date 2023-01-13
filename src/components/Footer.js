@@ -5,8 +5,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
-       <Link color="inherit" href="https://github.com/DianGigrich/Codescape/">
-       Codescape
+       <Link color="inherit" href="https://github.com/DianGigrich/SoccerHub/">
+       SoccerHub
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -40,7 +40,7 @@ export default function StickyFooter({puzzleImage}) {
       >
         <Container maxWidth="sm">
           <Typography  variant="body1" gutterBottom>
-            Thank you for playing today!
+            Hi Guys!
           </Typography>
           <Copyright />
         </Container>

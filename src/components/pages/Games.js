@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box, Container, Grid, Card, CardContent, Typography } from '@mui/material';
 
+// TODO: create table instead of cards
+
 export default function Home() {
     return (
         <Box sx={{
@@ -12,13 +14,13 @@ export default function Home() {
             <Container>
                 <Typography
                     component="h1"
-                    variant="h2"
+                    variant="h3"
                     align="center"
                     color="text.primary"
                     gutterBottom
                     className="welcome"
                 >
-                    Announcements
+                    Games
                 </Typography>
             </Container>
             <Grid container spacing={2} sx={{ py: 8, bgcolor: "#83ccc5" }}>
@@ -29,15 +31,13 @@ export default function Home() {
 
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h2">
-                                Welcome
+                                This will be a list of our games.
                             </Typography>
                             <Typography>
-                                Here is our announcements page where we will keep you informed of... announcements!
+                                I am not sure I want a database involved, that way I can keep control of the site.
+                                I also might want this as a table instead of cards
                             </Typography>
-                            <br />
-                            <Typography>
-                                This will include updates, news, games, etc.
-                            </Typography>
+                            
                         </CardContent>
                     </Card>
 
