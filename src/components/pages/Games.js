@@ -1,7 +1,18 @@
 import React from 'react';
-import { Box, Container, Grid, Card, CardContent, Typography } from '@mui/material';
+import { Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 
-// TODO: create table instead of cards
+
+
+
+function createData(game, field, opponent, snacks, drinks) {
+    return { game, field, opponent, snacks, drinks };
+  }
+
+const rows = [
+    createData(1, 4, "Johnson", "Leona's Mom", "Leona's Dad"),
+    createData(2, 4, "Naches Trail", "Sarah's Mom", "Mary's Dad"),
+
+]
 
 export default function Home(props) {
     return (
@@ -10,39 +21,45 @@ export default function Home(props) {
             pb: 6,
         }}
         >
-            <Container>
-                <Typography
-                    component="h1"
-                    variant="h3"
-                    align="center"
-                    color="text.primary"
-                    gutterBottom
-                    className="welcome"
-                >
-                    Games
-                </Typography>
-            </Container>
-            <Grid container spacing={2} sx={{ py: 8, bgcolor: "#ccbc94" }}>
-                <Grid item xs={12} sm={6} md={3}>
-                    <Card
-                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                    >
-
-                        <CardContent sx={{ flexGrow: 1 }}>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                This will be a list of our games.
-                            </Typography>
-                            <Typography>
-                                I am not sure I want a database involved, that way I can keep control of the site.
-                                I also might want this as a table instead of cards
-                            </Typography>
-                            
-                        </CardContent>
-                    </Card>
-
-                </Grid>
-                </Grid>
-
+            <div style={{ width: '100%' }}>
+            <TableContainer component={Paper} >
+      <Table  sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableHead >
+          <TableRow sx={{
+        backgroundColor: "yellow",
+        borderBottom: "2px solid black",
+        "& th": {
+          fontSize: "1.25rem",
+          color: "rgba(96, 96, 96)"
+        }
+      }}>
+            <TableCell>Game</TableCell>
+            <TableCell align="left">Field</TableCell>
+            <TableCell align="left">Opponent</TableCell>
+            <TableCell align="right">Snacks</TableCell>
+            <TableCell align="right">Drinks</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <TableRow
+              key={row.name}
+              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+            >
+              <TableCell component="th" scope="row">
+                {row.game}
+              </TableCell>
+              <TableCell align="left">{row.field}</TableCell>
+              <TableCell align="left">{row.opponent}</TableCell>
+              <TableCell align="right">{row.snacks}</TableCell>
+              <TableCell align="right">{row.drinks}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+    </div>
+            
         </Box>
     )
 }
