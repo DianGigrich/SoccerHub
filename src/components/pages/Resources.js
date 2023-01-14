@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Link } from '@mui/material';
+import Rules from '../../assets/Rules.pdf';
 
 export default function Home(props) {
     return (
@@ -8,9 +9,11 @@ export default function Home(props) {
             pb: 6,
         }}
         >
-            <Typography>
-                A place to put links to everything, such as maps, soccer rules, etc.
-                </Typography>
+            <Typography variant="h3">
+                <Link color="inherit" href={Rules} underline="hover" target="_blank">Rules
+                </Link>
+
+            </Typography>
 
         </Box>
     )

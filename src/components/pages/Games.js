@@ -23,10 +23,10 @@ export default function Home(props) {
         >
             <div style={{ width: '100%' }}>
             <TableContainer component={Paper} >
-      <Table  sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table  size="medium" sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead >
           <TableRow sx={{
-        backgroundColor: "yellow",
+        backgroundColor: "#fcecc4",
         borderBottom: "2px solid black",
         "& th": {
           fontSize: "1.25rem",
@@ -40,11 +40,11 @@ export default function Home(props) {
             <TableCell align="right">Drinks</TableCell>
           </TableRow>
         </TableHead>
-        <TableBody>
+        <TableBody sx={{ }}>
           {rows.map((row) => (
             <TableRow
               key={row.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              sx={{ '&:first-child th, &:last-child th': {  fontSize: "1.25rem"}, '&:first-child td, &:last-child td': {  fontSize: "1rem"} }}
             >
               <TableCell component="th" scope="row">
                 {row.game}

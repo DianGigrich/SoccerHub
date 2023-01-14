@@ -25,7 +25,7 @@ export default function Navbar(props) {
         aria-label="secondary tabs"
         sx={{ border: 5 , borderColor: 'primary.main'}}
       >
-        <Tab textColor="inherit" value="Home" label="Home" onClick={() => navigate('/')} />
+        <Tab sx={{ color: "#000000"}}value="Home" label="Home" onClick={() => navigate('/')} />
 
         <Tab textColor="inherit" value="Games" label="Games" onClick={() => navigate('/Games')} />
 
