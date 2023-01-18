@@ -4,17 +4,18 @@ import { Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, 
 
 
 
-function createData(game, field, opponent, snacks, drinks) {
-    return { game, field, opponent, snacks, drinks };
+function createData(game, win, field, opponent, snacks, drinks) {
+    return { game, win, field, opponent, snacks, drinks };
   }
 
 const rows = [
-    createData(1, 4, "Johnson", "Leona's Mom", "Leona's Dad"),
-    createData(2, 4, "Naches Trail", "Sarah's Mom", "Mary's Dad"),
+    createData(1, "W", 4, "Johnson", "Leona's Mom", "Leona's Dad"),
+    createData(2, " ", 4, "Naches Trail", "Sarah's Mom", "Mary's Dad"),
 
 ]
 
 export default function Home(props) {
+
     return (
         <Box sx={{
             pt: 8,
@@ -34,6 +35,7 @@ export default function Home(props) {
         }
       }}>
             <TableCell>Game</TableCell>
+            <TableCell align="left">W/L</TableCell>
             <TableCell align="left">Field</TableCell>
             <TableCell align="left">Opponent</TableCell>
             <TableCell align="right">Snacks</TableCell>
@@ -43,12 +45,13 @@ export default function Home(props) {
         <TableBody sx={{ }}>
           {rows.map((row) => (
             <TableRow
-              key={row.name}
+              key={row.game}
               sx={{ '&:first-child th, &:last-child th': {  fontSize: "1.25rem"}, '&:first-child td, &:last-child td': {  fontSize: "1rem"} }}
             >
               <TableCell component="th" scope="row">
                 {row.game}
               </TableCell>
+              <TableCell align="left">{row.win}</TableCell>
               <TableCell align="left">{row.field}</TableCell>
               <TableCell align="left">{row.opponent}</TableCell>
               <TableCell align="right">{row.snacks}</TableCell>
