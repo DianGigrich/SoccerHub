@@ -20,12 +20,11 @@ export default function Home(props) {
                     Announcements
                 </Typography>
             </Container>
-            <Grid container spacing={2} sx={{ py: 8, bgcolor: "#ccbc94" }}>
-                <Grid item xs={12} sm={6} md={3}>
+            <Grid container spacing={2} sx={{ p: 4, bgcolor: "#ccbc94" }}>
+                <Grid item xs={12} sm={12} md={6}>
                     <Card 
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
-
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h2">
                                 Welcome
@@ -39,9 +38,29 @@ export default function Home(props) {
                             </Typography>
                         </CardContent>
                     </Card>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6}>
+                            <Card
+                                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                            >
 
-                </Grid>
-                </Grid>
+                                <CardContent sx={{ flexGrow: 1 }}>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                       A second anouncment to check Fitness
+                                    </Typography>
+                                    <Typography>
+                                        More news.
+                                    </Typography>
+                                    <br/>
+                                    <Typography>
+                                        Ipsem lorem
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+
+                        </Grid>
+            </Grid>
+            
 
         </Box>
     )

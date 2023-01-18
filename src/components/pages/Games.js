@@ -26,7 +26,7 @@ export default function Home(props) {
             <TableContainer component={Paper} >
       <Table  size="medium" sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead >
-          <TableRow sx={{
+          <TableRow  sx={{
         backgroundColor: "#fcecc4",
         borderBottom: "2px solid black",
         "& th": {
@@ -34,7 +34,7 @@ export default function Home(props) {
           color: "rgba(96, 96, 96)"
         }
       }}>
-            <TableCell>Game</TableCell>
+            <TableCell  >Game</TableCell>
             <TableCell align="left">W/L</TableCell>
             <TableCell align="left">Field</TableCell>
             <TableCell align="left">Opponent</TableCell>
@@ -44,7 +44,7 @@ export default function Home(props) {
         </TableHead>
         <TableBody sx={{ }}>
           {rows.map((row) => (
-            <TableRow
+            <TableRow hover
               key={row.game}
               sx={{ '&:first-child th, &:last-child th': {  fontSize: "1.25rem"}, '&:first-child td, &:last-child td': {  fontSize: "1rem"} }}
             >
