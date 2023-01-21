@@ -16,7 +16,7 @@ function Header(props) {
                     align="center"
                     sx={{ flex: 1, letterSpacing: 6 }}
                 >
-                    Soccer Team Name Here
+                    Soccer Team
                 </Typography>
 
             </Toolbar>
