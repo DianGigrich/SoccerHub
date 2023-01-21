@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
-
+import Drawer from '../Drawer';
 
 
 
@@ -22,6 +22,7 @@ export default function Home(props) {
             pb: 6,
         }}
         >
+          <Drawer/>
             <div style={{ width: '100%' }}>
             <TableContainer component={Paper} >
       <Table  size="medium" sx={{ minWidth: 650 }} aria-label="simple table">

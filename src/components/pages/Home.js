@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Container, Grid, Card, CardContent, Typography } from '@mui/material';
 
+
 export default function Home(props) {
     return (
         <Box sx={{
@@ -9,6 +10,7 @@ export default function Home(props) {
         }}
         >
             <Container>
+                
                 <Typography
                     component="h1"
                     variant="h2"
