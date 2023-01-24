@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import Drawer from '../Drawer';
+import Progress from '../Progress';
+
 
 
 
@@ -22,6 +24,7 @@ export default function Home(props) {
             pb: 6,
         }}
         >
+       <Progress/>
           <Drawer/>
             <div style={{ width: '100%' }}>
             <TableContainer component={Paper} >
