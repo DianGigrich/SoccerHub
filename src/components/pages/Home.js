@@ -10,7 +10,7 @@ export default function Home(props) {
         }}
         >
             <Container>
-                
+
                 <Typography
                     component="h1"
                     variant="h2"
@@ -24,7 +24,7 @@ export default function Home(props) {
             </Container>
             <Grid container spacing={2} sx={{ p: 4, bgcolor: "#ccbc94" }}>
                 <Grid item xs={12} sm={12} md={6}>
-                    <Card 
+                    <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
                         <CardContent sx={{ flexGrow: 1 }}>
@@ -39,43 +39,43 @@ export default function Home(props) {
                                 Head Coach: &ensp; Tony Hamilton &emsp; (253)224-0653
                             </Typography>
                             <Typography>
-                               Assistant Coach: &ensp; Dian Gigrich &emsp; (253)241-1773 (it's pronounced Diane)
+                                Assistant Coach: &ensp; Dian Gigrich &emsp; (253)241-1773 (it's pronounced Diane)
                             </Typography>
                         </CardContent>
                     </Card>
                 </Grid>
                 <Grid item xs={12} sm={12} md={6}>
-                            <Card
-                                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                            >
+                    <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                    >
 
-                                <CardContent sx={{ flexGrow: 1 }}>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                       Custom Names for Jerseys Coming Soon
-                                    </Typography>
-                                    <Typography>
-                                       We think it's cool, so we're doing it. <br/> Please text your information to asst coach/treasurer Dian.
-                                    </Typography>
-                                    <br/>
-                                    <Typography>
-                                       Information needed: "Child's First Name" and "Requested Name for Jersey". 
-                                       <br/> &ensp;Write it twice if it's the same thing, so when Dian receives the message Dian will know what it's about.
-                                    </Typography>
-                                    <br/>
-                                    <Typography>
-                                        Sizes were already pre-determined by the form you filled out for BethelRec.
-                                    </Typography>
-                                    <br/>
-                                    <Typography>
-                                        $5 to Dian with Paypal, Venmo, and Cash accepted. When the time comes around Dian will go into further detail.
-                                        <br/> If you can't afford it we'll cover the cost. We want every kid to be included!
-                                    </Typography>
-                                </CardContent>
-                            </Card>
+                        <CardContent sx={{ flexGrow: 1 }}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                Custom Names for Jerseys Coming Soon
+                            </Typography>
+                            <Typography>
+                                We think it's cool, so we're doing it. <br /> Please text your information to asst coach/treasurer Dian.
+                            </Typography>
+                            <br />
+                            <Typography>
+                                Information needed: "Child's First Name" and "Requested Name for Jersey".
+                                <br /> &ensp;No message received = Child's First Name
+                            </Typography>
+                            <br />
+                            <Typography>
+                                Sizes were already pre-determined by the form you filled out for BethelRec.
+                            </Typography>
+                            <br />
+                            <Typography>
+                                $5 to Dian with Paypal, Venmo, and Cash accepted. When the time comes around I will go into further detail.
+                                <br /> If you can't afford it we'll cover the cost. We want every kid to be included!
+                            </Typography>
+                        </CardContent>
+                    </Card>
 
-                        </Grid>
+                </Grid>
             </Grid>
-            
+
 
         </Box>
     )
