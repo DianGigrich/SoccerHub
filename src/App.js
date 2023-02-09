@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
 import Games from "./components/pages/Games";
 import Resources from "./components/pages/Resources";
+import Error from "./components/pages/Error";
+
 import {
   ThemeProvider,
   CssBaseline,
@@ -47,7 +49,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/games" element={<Games />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="*" element={<h1>404</h1>} />
+          <Route path="*" element={<Error/>} />
         </Routes>
         <StickyFooter />
       </Router>

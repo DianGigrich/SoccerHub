@@ -28,7 +28,7 @@ export default function Navbar() {
 
         <Tab textColor="inherit" value="Games" label="Games" onClick={() => navigate('/Games')} />
 
-        <Tab textColor="primary" value="Resources" label="Resources Links" onClick={() => navigate('/Resources')} />
+        <Tab textColor="primary" value="Resources" label="Resources, Links" onClick={() => navigate('/Resources')} />
       </Tabs>
     </Box>
 

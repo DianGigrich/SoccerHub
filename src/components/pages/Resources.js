@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography, Link, Container } from '@mui/material';
 import Rules from '../../assets/Rules.pdf';
 
-export default function Home(props) {
+export default function Resources(props) {
     return (
         <Box sx={{
             pt: 8,

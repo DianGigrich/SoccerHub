@@ -15,7 +15,7 @@ const rows = [
 
 ]
 
-export default function Home(props) {
+export default function Games(props) {
 
     return (
         <Box sx={{
