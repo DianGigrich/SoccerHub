@@ -5,13 +5,13 @@ import Drawer from '../Drawer';
 
 
 
-function createData(game, win, field, snacks, drinks, opponent ) {
-    return { game, win, field, snacks, drinks, opponent };
+function createData(game, date, win, field, snacks, drinks, opponent ) {
+    return { game, date, win, field, snacks, drinks, opponent };
   }
 
 const rows = [
-    createData(1, "W", 4, "Leona's Mom", "Leona's Mom", "Johnson" ),
-    createData(2, " ", 4, "Sarah's Mom", "Mary's Dad", "Naches Trail" ),
+    createData(1, 2.27, "W", 4, "Leona's Mom", "Leona's Mom", "Example" ),
+    createData(2, 3.01, " ", 3, "Sarah's Mom", "Mary's Dad", "2nd Example" ),
 
 ]
 
@@ -49,6 +49,8 @@ export default function Home(props) {
         }
       }}>
             <TableCell  >Game</TableCell>
+            <TableCell  >Date</TableCell>
+
             <TableCell align="left">W/L</TableCell>
             <TableCell align="left">Field</TableCell>
             <TableCell align="left">Snacks</TableCell>
@@ -65,7 +67,10 @@ export default function Home(props) {
               <TableCell component="th" scope="row">
                 {row.game}
               </TableCell>
-              <TableCell align="left">{row.win}</TableCell>
+              <TableCell align="left">
+                {row.date}
+              </TableCell>
+              <TableCell >{row.win}</TableCell>
               <TableCell align="left">{row.field}</TableCell>
               <TableCell align="left">{row.snacks}</TableCell>
               <TableCell align="left">{row.drinks}</TableCell>
