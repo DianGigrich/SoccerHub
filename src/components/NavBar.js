@@ -1,16 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Box, Tabs, Tab} from '@mui/material/';
 
 
-export default function Navbar(props) {
+export default function Navbar() {
   const navigate = useNavigate()
 
-  const [value, setValue] = useState('Home');
+  const [value, setValue] = React.useState('Home');
 
-  const handleTabChange = (newValue) => {
+  const handleTabChange = (event, newValue) => {
     setValue(newValue);
-
   };
 
   return (
@@ -29,7 +28,7 @@ export default function Navbar(props) {
 
         <Tab textColor="inherit" value="Games" label="Games" onClick={() => navigate('/Games')} />
 
-        <Tab textColor="primary" value="Resources" label="Resources / Links" onClick={() => navigate('/Resources')} />
+        <Tab textColor="primary" value="Resources" label="Resources Links" onClick={() => navigate('/Resources')} />
       </Tabs>
     </Box>
 
