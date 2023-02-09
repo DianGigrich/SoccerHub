@@ -48,33 +48,33 @@ export default function Home(props) {
           color: "rgba(96, 96, 96)"
         }
       }}>
-            <TableCell  >Game</TableCell>
-            <TableCell  >Date</TableCell>
+            <TableCell  key="game">Game</TableCell>
+            <TableCell  key="date">Date</TableCell>
 
-            <TableCell align="left">W/L</TableCell>
-            <TableCell align="left">Field</TableCell>
-            <TableCell align="left">Snacks</TableCell>
-            <TableCell align="left">Drinks</TableCell>
-            <TableCell align="left">Opponent</TableCell>
+            <TableCell key="win" align="left">W/L</TableCell>
+            <TableCell key="field" align="left">Field</TableCell>
+            <TableCell key="snakcs" align="left">Snacks</TableCell>
+            <TableCell key="drinks" align="left">Drinks</TableCell>
+            <TableCell key="opp" align="left">Opponent</TableCell>
           </TableRow>
         </TableHead>
         <TableBody sx={{ }}>
           {rows.map((row) => (
             <TableRow hover
               key={row.game}
-              sx={{ '&:first-child th, &:last-child th': {  fontSize: "1.25rem"}, '&:first-child td, &:last-child td': {  fontSize: "1rem"} }}
+              sx={{ '&:first-of-type th, &:last-child th': {  fontSize: "1.25rem"}, '&:first-of-type td, &:last-child td': {  fontSize: "1rem"} }}
             >
-              <TableCell component="th" scope="row">
+              <TableCell component="th" scope="row" key={row.index}>
                 {row.game}
               </TableCell>
-              <TableCell align="left">
+              <TableCell align="left" key={row.index}>
                 {row.date}
               </TableCell>
               <TableCell >{row.win}</TableCell>
-              <TableCell align="left">{row.field}</TableCell>
-              <TableCell align="left">{row.snacks}</TableCell>
-              <TableCell align="left">{row.drinks}</TableCell>
-              <TableCell align="left">{row.opponent}</TableCell>
+              <TableCell align="left" key={row.index}>{row.field}</TableCell>
+              <TableCell align="left" key={row.index}>{row.snacks}</TableCell>
+              <TableCell align="left" key={row.index}>{row.drinks}</TableCell>
+              <TableCell align="left" key={row.index}>{row.opponent}</TableCell>
             </TableRow>
           ))}
         </TableBody>
