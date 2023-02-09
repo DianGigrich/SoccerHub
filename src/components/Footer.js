@@ -37,7 +37,7 @@ export default function StickyFooter({props}) {
       >
         <Container maxWidth="sm">
           <Typography  variant="body1" gutterBottom>
-            Hi Guys!
+            Hi Guys! Dian is the author, excuse me(Dian) if I(Dian) slips up with an "I" somewhere.
           </Typography>
           <Copyright />
         </Container>

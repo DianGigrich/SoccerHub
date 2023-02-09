@@ -1,18 +1,17 @@
 import React from 'react';
-import { Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import { Box, Container, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import Drawer from '../Drawer';
-import Progress from '../Progress';
 
 
 
 
-function createData(game, win, field, opponent, snacks, drinks) {
-    return { game, win, field, opponent, snacks, drinks };
+function createData(game, win, field, snacks, drinks, opponent ) {
+    return { game, win, field, snacks, drinks, opponent };
   }
 
 const rows = [
-    createData(1, "W", 4, "Johnson", "Leona's Mom", "Leona's Dad"),
-    createData(2, " ", 4, "Naches Trail", "Sarah's Mom", "Mary's Dad"),
+    createData(1, "W", 4, "Leona's Mom", "Leona's Mom", "Johnson" ),
+    createData(2, " ", 4, "Sarah's Mom", "Mary's Dad", "Naches Trail" ),
 
 ]
 
@@ -24,7 +23,18 @@ export default function Home(props) {
             pb: 6,
         }}
         >
-       <Progress/>
+          <Container>
+                <Typography
+                    component="h1"
+                    variant="h2"
+                    align="center"
+                    color="text.primary"
+                    gutterBottom
+                    className="welcome"
+                >
+                    Awaiting Schedule Release
+                </Typography>
+            </Container>
           <Drawer/>
             <div style={{ width: '100%' }}>
             <TableContainer component={Paper} >
@@ -41,9 +51,9 @@ export default function Home(props) {
             <TableCell  >Game</TableCell>
             <TableCell align="left">W/L</TableCell>
             <TableCell align="left">Field</TableCell>
+            <TableCell align="left">Snacks</TableCell>
+            <TableCell align="left">Drinks</TableCell>
             <TableCell align="left">Opponent</TableCell>
-            <TableCell align="right">Snacks</TableCell>
-            <TableCell align="right">Drinks</TableCell>
           </TableRow>
         </TableHead>
         <TableBody sx={{ }}>
@@ -57,9 +67,9 @@ export default function Home(props) {
               </TableCell>
               <TableCell align="left">{row.win}</TableCell>
               <TableCell align="left">{row.field}</TableCell>
+              <TableCell align="left">{row.snacks}</TableCell>
+              <TableCell align="left">{row.drinks}</TableCell>
               <TableCell align="left">{row.opponent}</TableCell>
-              <TableCell align="right">{row.snacks}</TableCell>
-              <TableCell align="right">{row.drinks}</TableCell>
             </TableRow>
           ))}
         </TableBody>

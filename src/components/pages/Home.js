@@ -29,14 +29,17 @@ export default function Home(props) {
                     >
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h2">
-                                Welcome
+                                Welcome Elk Plain 3rd and 4th graders!
                             </Typography>
                             <Typography>
-                                Here is our announcements page where we will keep you informed of... announcements!
+                                Practices are Tuesday/Wednesday 6-7pm at Elk Plain.
                             </Typography>
                             <br />
                             <Typography>
-                                This will include updates, news, games, etc.
+                                Head Coach: &ensp; Tony Hamilton &emsp; (253)224-0653
+                            </Typography>
+                            <Typography>
+                               Assistant Coach: &ensp; Dian Gigrich &emsp; (253)241-1773 (it's pronounced Diane)
                             </Typography>
                         </CardContent>
                     </Card>
@@ -48,14 +51,24 @@ export default function Home(props) {
 
                                 <CardContent sx={{ flexGrow: 1 }}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                       A second anouncment to check Fitness
+                                       Custom Names for Jerseys Coming Soon
                                     </Typography>
                                     <Typography>
-                                        More news.
+                                       We think it's cool, so we're doing it. <br/> Please text your information to asst coach/treasurer Dian.
                                     </Typography>
                                     <br/>
                                     <Typography>
-                                        Ipsem lorem
+                                       Information needed: "Child's First Name" and "Requested Name for Jersey". 
+                                       <br/> &ensp;Write it twice if it's the same thing, so when Dian receives the message Dian will know what it's about.
+                                    </Typography>
+                                    <br/>
+                                    <Typography>
+                                        Sizes were already pre-determined by the form you filled out for BethelRec.
+                                    </Typography>
+                                    <br/>
+                                    <Typography>
+                                        $5 to Dian with Paypal, Venmo, and Cash accepted. When the time comes around Dian will go into further detail.
+                                        <br/> If you can't afford it we'll cover the cost. We want every kid to be included!
                                     </Typography>
                                 </CardContent>
                             </Card>

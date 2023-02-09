@@ -15,7 +15,7 @@ export default function Home(props) {
                     </Link>
                 </Typography>
                     <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
-                    <Link sx={{ p: 4 }} color="inherit" href={Rules} underline="hover" target="_blank">Just Checking
+                    <Link sx={{ p: 4 }} color="inherit" href="https://bethelrec.org/home" underline="hover" target="_blank">Bethel Rec website
                         </Link>
                     </Typography>
 
