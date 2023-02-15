@@ -18,6 +18,9 @@ export default function Resources(props) {
                     <Link sx={{ p: 4 }} color="inherit" href="https://bethelrec.org/home" underline="hover" target="_blank">Bethel Rec website
                         </Link>
                     </Typography>
+                    <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
+                    100% going to post the field map here when it posts on Bethel Rec.
+                    </Typography>
 
             </Container>
         </Box>
