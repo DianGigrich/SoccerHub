@@ -51,7 +51,7 @@ export default function Home(props) {
 
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h2">
-                                Custom Names for Jerseys Coming Soon
+                                Custom Names for Jerseys!
                             </Typography>
                             <Typography>
                                 We think it's cool, so we're doing it. <br /> Please text your information to asst coach/treasurer Dian.
@@ -67,7 +67,7 @@ export default function Home(props) {
                             </Typography>
                             <br />
                             <Typography>
-                                $5 to Dian with Paypal, Venmo, and Cash accepted. When the time comes around I will go into further detail.
+                                $5 to Dian with Paypal, Venmo, and Cash accepted on first day of practice.
                                 <br /> If you can't afford it we'll cover the cost. We want every kid to be included!
                             </Typography>
                         </CardContent>
