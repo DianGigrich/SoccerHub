@@ -67,7 +67,7 @@ export default function Home(props) {
                             </Typography>
                             <br />
                             <Typography>
-                                $5 to Dian with Paypal, Venmo, and Cash accepted on first day of practice.
+                                $5 to Dian with Paypal, Venmo @Dian-Sherman , and Cash accepted on first day of practice.
                                 <br /> If you can't afford it we'll cover the cost. We want every kid to be included!
                             </Typography>
                         </CardContent>
