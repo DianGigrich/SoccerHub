@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Grid, Card, CardContent, Typography } from '@mui/material';
+import { Box, Container, Grid, Card, CardContent, Typography, List, ListItem } from '@mui/material';
 
 
 export default function Home(props) {
@@ -48,10 +48,32 @@ export default function Home(props) {
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
+                        <CardContent sx={{ flexGrow: 1 }}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                               Practice Cancellations due to School Events
+                            </Typography>
+                            <List>
+                               <ListItem>
+                                3/14/2023 Tuesday - Battle of the Books
+                               </ListItem>
+                               <ListItem>
+                                3/16/2023 Wednesday - "Music" (I should look into this to verify)
+                               </ListItem>
+                               <ListItem>
+                                3/21/2023 Tuesday - Spring Orchestra Concert
+                               </ListItem>
+                            </List>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6}>
+                    <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                    >
 
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h2">
-                                Custom Names for Jerseys!
+                                Custom Names for Jerseys! *Due Thursday 23rd
                             </Typography>
                             <Typography>
                                 We think it's cool, so we're doing it. <br /> Please text your information to asst coach/treasurer Dian.
