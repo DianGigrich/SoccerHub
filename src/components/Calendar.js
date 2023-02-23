@@ -9,8 +9,8 @@ export default class DemoApp extends React.Component {
         plugins={[ dayGridPlugin ]}
         initialView="dayGridMonth"
         events={[
-          { title: 'Game 1', date: '2023-02-27' },
-          { title: 'Game 2', date: '2023-03-01' }
+          // { title: 'Game 1', date: '2023-02-27' },
+          // { title: 'Game 2', date: '2023-03-01' }
         ]}
       />
     )
