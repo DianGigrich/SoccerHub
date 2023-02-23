@@ -73,7 +73,7 @@ export default function Home(props) {
 
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h2">
-                                Custom Names for Jerseys! *Due Thursday 23rd
+                                Custom Names for Jerseys! 
                             </Typography>
                             <Typography>
                                 We think it's cool, so we're doing it. <br /> Please text your information to asst coach/treasurer Dian.

@@ -32,7 +32,7 @@ export default function Games(props) {
                     gutterBottom
                     className="welcome"
                 >
-                    Awaiting Schedule Release
+                    Awaiting Schedule Release (Fri, March 3rd)
                 </Typography>
             </Container>
           <Drawer/>
