@@ -10,8 +10,8 @@ function createData(game, date, win, field, snacks, drinks, opponent ) {
   }
 
 const rows = [
-    createData(1, 2.27, "W", 4, "Leona's Mom", "Leona's Mom", "Example" ),
-    createData(2, 3.01, " ", 3, "Sarah's Mom", "Mary's Dad", "2nd Example" ),
+    createData(1, 2.00, "W", 4, "Leona's Mom", "Leona's Mom", "Example" ),
+    createData(2, 3.00, " ", 3, "Sarah's Mom", "Mary's Dad", "2nd Example" ),
 
 ]
 
