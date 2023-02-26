@@ -34,6 +34,9 @@ export default function Games(props) {
                 >
                     Awaiting Schedule Release (Fri, March 3rd)
                 </Typography>
+                <Typography>
+                  First Practice Game March 4th
+                </Typography>
             </Container>
           <Drawer/>
             <div style={{ width: '100%' }}>
