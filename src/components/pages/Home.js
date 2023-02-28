@@ -57,7 +57,7 @@ export default function Home(props) {
                                 3/14/2023 Tuesday - Battle of the Books
                                </ListItem>
                                <ListItem>
-                                3/16/2023 Wednesday - "Music" (I should look into this to verify)
+                                3/16/2023 Wednesday - Band Concert
                                </ListItem>
                                <ListItem>
                                 3/21/2023 Tuesday - Spring Orchestra Concert
