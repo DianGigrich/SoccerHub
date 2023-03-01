@@ -1,12 +1,18 @@
 import React from 'react';
-import { Box, Container, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
-import Drawer from '../Drawer';
+import { useNavigate } from 'react-router-dom';
+
+import { Button, Box, Container, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+// import Drawer from '../Drawer';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 
 
 
-function createData(game, date, win, field, snacks, drinks, opponent ) {
-    return { game, date, win, field, snacks, drinks, opponent };
+
+export default function Games(props) {
+  const navigate = useNavigate()
+function createData(title, date, win, field, snacks, drinks, opponent ) {
+    return { title, date, win, field, snacks, drinks, opponent };
   }
 
 const rows = [
@@ -14,9 +20,6 @@ const rows = [
   
 
 ]
-
-export default function Games(props) {
-
     return (
         <Box sx={{
             pt: 8,
@@ -39,7 +42,8 @@ export default function Games(props) {
             <Typography>
               I'm sorry I haven't figured out the calender yet. It clicks open/close so you can't change the month.
             </Typography>
-          <Drawer/>
+            <Button textColor="inherit" value="Calendar" label="Calendargames" onClick={() => navigate('/Calendar')}>Calendar View<CalendarMonthIcon/></Button>
+          {/* <Drawer/> */}
             <div style={{ width: '100%' }}>
             <TableContainer component={Paper} >
       <Table  size="medium" sx={{ minWidth: 650 }} aria-label="simple table">
@@ -52,7 +56,7 @@ export default function Games(props) {
           color: "rgba(96, 96, 96)"
         }
       }}>
-            <TableCell  key="game">Game</TableCell>
+            <TableCell  key="title">Game</TableCell>
             <TableCell  key="date">Date</TableCell>
 
             <TableCell key="win" align="left">W/L</TableCell>
@@ -65,11 +69,11 @@ export default function Games(props) {
         <TableBody sx={{ }}>
           {rows.map((row) => (
             <TableRow hover
-              key={row.game}
+              key={row.title}
               sx={{ '&:first-of-type th, &:last-child th': {  fontSize: "1.25rem"}, '&:first-of-type td, &:last-child td': {  fontSize: "1rem"} }}
             >
               <TableCell component="th" scope="row" key={row.index}>
-                {row.game}
+                {row.title}
               </TableCell>
               <TableCell align="left" key={row.index}>
                 {row.date}

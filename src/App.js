@@ -8,6 +8,7 @@ import Home from "./components/pages/Home";
 import Games from "./components/pages/Games";
 import Resources from "./components/pages/Resources";
 import Error from "./components/pages/Error";
+import Calendar from "./components/pages/Calendar";
 
 import {
   ThemeProvider,
@@ -28,6 +29,12 @@ const theme = createTheme({
       main: '#fcecc4',
       dark: '#ccbc94',
     },
+    drawerHeader: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'flex-end',
+      padding: '0 8px'
+    },
   },
   typography: {
     fontFamily: 'Droid Sans',
@@ -35,6 +42,7 @@ const theme = createTheme({
 });
 
 function App() {
+
 
   return (
     <Container>
@@ -45,8 +53,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/games" element={<Games />} />
           <Route path="/resources" element={<Resources />} />
+
+          <Route path="/games" element={<Games />} />
+          <Route path="/calendar" element={<Calendar />} />
+
           <Route path="*" element={<Error/>} />
         </Routes>
         <StickyFooter />
