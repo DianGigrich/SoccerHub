@@ -1,8 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import { Button, Box, Container, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
-// import Drawer from '../Drawer';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 
@@ -11,12 +9,12 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export default function Games(props) {
   const navigate = useNavigate()
-function createData(title, date, win, field, snacks, drinks, opponent ) {
-    return { title, date, win, field, snacks, drinks, opponent };
+function createData(title, date, field, snacks, drinks, opponent ) {
+    return { title, date, field, snacks, drinks, opponent };
   }
 
 const rows = [
-    createData("Practice Game", "3/04", "", "?", "", "", "TBD" ),
+    createData("Practice Game", "3/04", "?", "", "", "TBD" ),
   
 
 ]
@@ -39,11 +37,7 @@ const rows = [
                 </Typography>
 
             </Container>
-            <Typography>
-              I'm sorry I haven't figured out the calender yet. It clicks open/close so you can't change the month.
-            </Typography>
             <Button textColor="inherit" value="Calendar" label="Calendargames" onClick={() => navigate('/Calendar')}>Calendar View<CalendarMonthIcon/></Button>
-          {/* <Drawer/> */}
             <div style={{ width: '100%' }}>
             <TableContainer component={Paper} >
       <Table  size="medium" sx={{ minWidth: 650 }} aria-label="simple table">
@@ -58,8 +52,6 @@ const rows = [
       }}>
             <TableCell  key="title">Game</TableCell>
             <TableCell  key="date">Date</TableCell>
-
-            <TableCell key="win" align="left">W/L</TableCell>
             <TableCell key="field" align="left">Field</TableCell>
             <TableCell key="snakcs" align="left">Snacks</TableCell>
             <TableCell key="drinks" align="left">Drinks</TableCell>
@@ -78,7 +70,6 @@ const rows = [
               <TableCell align="left" key={row.index}>
                 {row.date}
               </TableCell>
-              <TableCell >{row.win}</TableCell>
               <TableCell align="left" key={row.index}>{row.field}</TableCell>
               <TableCell align="left" key={row.index}>{row.snacks}</TableCell>
               <TableCell align="left" key={row.index}>{row.drinks}</TableCell>
