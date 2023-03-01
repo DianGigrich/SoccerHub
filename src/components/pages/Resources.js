@@ -1,6 +1,10 @@
 import React from 'react';
 import { Box, Typography, Link, Container } from '@mui/material';
 import Rules from '../../assets/Rules.pdf';
+import Map from '../../assets/Map.pdf';
+import Practice from '../../assets/Practice.pdf';
+
+
 
 export default function Resources(props) {
     return (
@@ -19,7 +23,12 @@ export default function Resources(props) {
                         </Link>
                     </Typography>
                     <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
-                    100% going to post the field map here when it posts on Bethel Rec.
+                    <Link sx={{ p: 4 }} color="inherit" href={Map} underline="hover" target="_blank">Facility Map
+                        </Link>
+                    </Typography>
+                    <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
+                    <Link sx={{ p: 4 }} color="inherit" href={Practice} underline="hover" target="_blank">Practice Game Schedule
+                        </Link>
                     </Typography>
 
             </Container>

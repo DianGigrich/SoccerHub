@@ -9,12 +9,12 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export default function Games(props) {
   const navigate = useNavigate()
-function createData(title, date, field, snacks, drinks, opponent ) {
-    return { title, date, field, snacks, drinks, opponent };
+function createData(title, date, time, field, snacks, drinks, opponent ) {
+    return { title, date, time, field, snacks, drinks, opponent };
   }
 
 const rows = [
-    createData("Practice Game", "3/04", "?", "", "", "TBD" ),
+    createData("Practice Game", "3/04", "?", "?", "", "", "TBD" ),
 
 ]
     return (
@@ -51,6 +51,7 @@ const rows = [
       }}>
             <TableCell  key="title">Game</TableCell>
             <TableCell  key="date">Date</TableCell>
+            <TableCell  key="time">Time</TableCell>
             <TableCell key="field" align="left">Field</TableCell>
             <TableCell key="snakcs" align="left">Snacks</TableCell>
             <TableCell key="drinks" align="left">Drinks</TableCell>
@@ -63,12 +64,9 @@ const rows = [
               key={row.title}
               sx={{ '&:first-of-type th, &:last-child th': {  fontSize: "1.25rem"}, '&:first-of-type td, &:last-child td': {  fontSize: "1rem"} }}
             >
-              <TableCell component="th" scope="row" key={row.index}>
-                {row.title}
-              </TableCell>
-              <TableCell align="left" key={row.index}>
-                {row.date}
-              </TableCell>
+              <TableCell component="th" scope="row" key={row.index}>{row.title}</TableCell>
+              <TableCell align="left" key={row.index}>{row.date}</TableCell>
+              <TableCell align="left" key={row.index}>{row.time}</TableCell>
               <TableCell align="left" key={row.index}>{row.field}</TableCell>
               <TableCell align="left" key={row.index}>{row.snacks}</TableCell>
               <TableCell align="left" key={row.index}>{row.drinks}</TableCell>

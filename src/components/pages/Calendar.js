@@ -5,7 +5,7 @@ import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 
 export default function Calendar(props) {
  const info = {events: [
-        { title: 'Practice Game', date: '2023-03-04' },
+        { title: 'Practice Game', date: '2023-03-04', time: '' },
         { title: 'Practice Cancelled', date: '2023-03-14' },
         { title: 'Practice Cancelled', date: '2023-03-21' },
         { title: 'Practice Cancelled?', date: '2023-03-15'},
