@@ -43,6 +43,10 @@ const theme = createTheme({
 
 function App() {
 
+  const data = {
+    title: "practice game",
+    date: "2023-3-04"
+  }
 
   return (
     <Container>
@@ -56,7 +60,7 @@ function App() {
           <Route path="/resources" element={<Resources />} />
 
           <Route path="/games" element={<Games />} />
-          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/calendar" element={<Calendar {...data}/>} />
 
           <Route path="*" element={<Error/>} />
         </Routes>

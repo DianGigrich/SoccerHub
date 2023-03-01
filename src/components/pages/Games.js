@@ -15,7 +15,6 @@ function createData(title, date, field, snacks, drinks, opponent ) {
 
 const rows = [
     createData("Practice Game", "3/04", "?", "", "", "TBD" ),
-  
 
 ]
     return (
