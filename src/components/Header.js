@@ -14,9 +14,10 @@ function Header(props) {
                     component="h2"
                     variant="h2"
                     align="center"
+                    color= "red"
                     sx={{ flex: 1, letterSpacing: 6 }}
                 >
-                    Soccer Team
+                    Dragons
                 </Typography>
 
             </Toolbar>

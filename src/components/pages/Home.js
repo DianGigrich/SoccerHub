@@ -43,6 +43,20 @@ export default function Home(props) {
                             </Typography>
                         </CardContent>
                     </Card>
+                </Grid><Grid item xs={12} sm={12} md={6}>
+                    <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                    >
+                        <CardContent sx={{ flexGrow: 1 }}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                First Practice
+                            </Typography>
+                            <Typography>
+                                Great job on our first practice! The kids were all excited and hard workers today. I know it was cold, but they held up well.
+                            </Typography>
+                           
+                        </CardContent>
+                    </Card>
                 </Grid>
                 <Grid item xs={12} sm={12} md={6}>
                     <Card
@@ -70,35 +84,18 @@ export default function Home(props) {
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
-
-                        <CardContent sx={{ flexGrow: 1 }}>
+                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
                             <Typography gutterBottom variant="h5" component="h2">
                                 Custom Names for Jerseys! 
                             </Typography>
                             <Typography>
-                                We think it's cool, so we're doing it. <br /> Please text your information to asst coach/treasurer Dian.
-                            </Typography>
-                            <br />
-                            <Typography>
-                                Information needed: "Child's First Name" and "Requested Name for Jersey".
-                                <br /> &ensp;No message received = Child's First Name
-                            </Typography>
-                            <br />
-                            <Typography>
-                                Sizes were already pre-determined by the form you filled out for BethelRec.
-                            </Typography>
-                            <br />
-                            <Typography>
-                                $5 to Dian with Paypal, Venmo @Dian-Sherman , and Cash accepted on first day of practice.
-                                <br /> If you can't afford it we'll cover the cost. We want every kid to be included!
+                              ~COMPLETE~
                             </Typography>
                         </CardContent>
                     </Card>
 
                 </Grid>
             </Grid>
-
-
         </Box>
     )
 }
