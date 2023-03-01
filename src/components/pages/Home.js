@@ -73,7 +73,7 @@ export default function Home(props) {
                                 3/14/2023 Tuesday - Battle of the Books
                                </ListItem>
                                <ListItem>
-                                3/16/2023 Wednesday - Band Concert
+                                3/15/2023 Wednesday - "Music" Waiting for Bethel Rec to approve practice
                                </ListItem>
                                <ListItem>
                                 3/21/2023 Tuesday - Spring Orchestra Concert
