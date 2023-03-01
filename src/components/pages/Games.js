@@ -34,7 +34,9 @@ const rows = [
                 >
                     Awaiting Schedule Release (Fri, March 3rd)
                 </Typography>
-
+<Typography>
+  Practice game schedule is out on Bethel Rec, but it only shows BMS table and we aren't on it.  I think they messed up.
+</Typography>
             </Container>
             <Button textColor="inherit" value="Calendar" label="Calendargames" onClick={() => navigate('/Calendar')}>Calendar View<CalendarMonthIcon/></Button>
             <div style={{ width: '100%' }}>
