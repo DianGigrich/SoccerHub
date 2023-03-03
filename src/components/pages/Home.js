@@ -29,10 +29,10 @@ export default function Home(props) {
                     >
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h2">
-                                First Practice
+                                First Practice Week
                             </Typography>
                             <Typography>
-                                Great job on our first practice! The kids were all excited and hard workers today. I know it was cold, but they held up well.
+                                Great job on our first practices! The kids were all excited and hard workers. I know it was cold, but they held up well.
                             </Typography>
                            
                         </CardContent>
