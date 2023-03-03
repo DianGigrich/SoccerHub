@@ -15,6 +15,12 @@ function createData(title, date, time, field, snacks, drinks, opponent ) {
 
 const rows = [
     createData("Practice Game", "3/04", "?", "?", "", "", "TBD" ),
+    createData(1, "3/11", "2pm", "BHS 8", "", "", "Kapowsin" ),
+    createData(2, "3/18", "9am", "BHS 8", "", "", "Graham" ),
+    createData(3, "3/25", "1130am", "BHS 8", "", "", "Nelson" ),
+    createData(4, "3/27", "5:15pm", "BMS 3", "", "", "Centennial" ),
+    createData(5, "4/1", "9:15am", "Art Crate 2", "", "", "Rocky Ridge" ),
+    createData(6, "4/15", "10:15am", "BHS 8", "", "", "Thompson" )
 
 ]
     return (

@@ -19,7 +19,7 @@ export default function Resources(props) {
                     </Link>
                 </Typography>
                     <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
-                    <Link sx={{ p: 4 }} color="inherit" href="https://bethelrec.org/home" underline="hover" target="_blank">Bethel Rec website
+                    <Link sx={{ p: 4 }} color="inherit" href="https://bethelrec.org/schedule/412109/3rd4th-girls" underline="hover" target="_blank">Bethel Rec website
                         </Link>
                     </Typography>
                     <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
