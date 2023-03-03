@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Link, Container, CardMedia, Card} from '@mui/material';
+import { Box, Typography, Link, Container, CardMedia } from '@mui/material';
 import Rules from '../../assets/Rules.pdf';
 import Map from '../../assets/Map.pdf';
 import Practice from '../../assets/Practice.pdf';
