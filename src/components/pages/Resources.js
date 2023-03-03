@@ -1,8 +1,9 @@
 import React from 'react';
-import { Box, Typography, Link, Container, CardMedia } from '@mui/material';
+import { Box, Typography, Link, Container, CardMedia, Card} from '@mui/material';
 import Rules from '../../assets/Rules.pdf';
 import Map from '../../assets/Map.pdf';
 import Practice from '../../assets/Practice.pdf';
+import Facility from '../../assets/Facility.jpg';
 
 
 
@@ -19,7 +20,7 @@ export default function Resources(props) {
                     </Link>
                 </Typography>
                     <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
-                    <Link sx={{ p: 4 }} color="inherit" href="https://bethelrec.org/schedule/412109/3rd4th-girls" underline="hover" target="_blank">Bethel Rec website
+                    <Link sx={{ p: 4 }} color="inherit" href="https://bethelrec.org/schedule/412109/3rd4th-girls" underline="hover" target="_blank">Bethel Rec Soccer Games Website
                         </Link>
                     </Typography>
                     <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
@@ -30,14 +31,16 @@ export default function Resources(props) {
                     <Link sx={{ p: 4 }} color="inherit" href={Practice} underline="hover" target="_blank">Practice Game Schedule
                         </Link>
                     </Typography>
-                    <CardMedia
-        component="img"
-        height="194"
-        image={Map}
-        alt="Paella dish"
-      />
-
+                    
             </Container>
+            <Container>
+                       <CardMedia
+        component="img"
+        height="auto"
+        image={Facility}
+        alt="facility map"
+      />
+ </Container>
         </Box>
     )
 }
