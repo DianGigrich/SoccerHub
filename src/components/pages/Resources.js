@@ -15,19 +15,19 @@ export default function Resources(props) {
         }}
         >
             <Container>
-                <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
+                <Typography variant="h4" sx={{ p: 4, bgcolor: "#ccbc94" }}>
                     <Link sx={{ p: 4 }} color="inherit" href={Rules} underline="hover" target="_blank">Rules
                     </Link>
                 </Typography>
-                    <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
+                    <Typography variant="h4" sx={{ p: 4, bgcolor: "#ccbc94" }}>
                     <Link sx={{ p: 4 }} color="inherit" href="https://bethelrec.org/schedule/412109/3rd4th-girls" underline="hover" target="_blank">Bethel Rec Soccer Games Website
                         </Link>
                     </Typography>
-                    <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
+                    <Typography variant="h4" sx={{ p: 4, bgcolor: "#ccbc94" }}>
                     <Link sx={{ p: 4 }} color="inherit" href={Map} underline="hover" target="_blank">Facility Map
                         </Link>
                     </Typography>
-                    <Typography variant="h3" sx={{ p: 4, bgcolor: "#ccbc94" }}>
+                    <Typography variant="h4" sx={{ p: 4, bgcolor: "#ccbc94" }}>
                     <Link sx={{ p: 4 }} color="inherit" href={Practice} underline="hover" target="_blank">Practice Game Schedule
                         </Link>
                     </Typography>
