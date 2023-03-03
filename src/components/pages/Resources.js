@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Link, Container } from '@mui/material';
+import { Box, Typography, Link, Container, CardMedia } from '@mui/material';
 import Rules from '../../assets/Rules.pdf';
 import Map from '../../assets/Map.pdf';
 import Practice from '../../assets/Practice.pdf';
@@ -30,6 +30,12 @@ export default function Resources(props) {
                     <Link sx={{ p: 4 }} color="inherit" href={Practice} underline="hover" target="_blank">Practice Game Schedule
                         </Link>
                     </Typography>
+                    <CardMedia
+        component="img"
+        height="194"
+        image={Map}
+        alt="Paella dish"
+      />
 
             </Container>
         </Box>
