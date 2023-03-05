@@ -47,7 +47,7 @@ export default function Home(props) {
                                 Welcome Elk Plain 3rd and 4th graders!
                             </Typography>
                             <Typography>
-                                Practices are Tuesday/Wednesday 6-7pm at Elk Plain.
+                                Practices are ... ?Tuesday/Thursday 5-6? Tuesday/Wednesday 6-7pm at Elk Plain.
                             </Typography>
                             <br />
                             <Typography>

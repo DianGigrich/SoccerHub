@@ -14,7 +14,6 @@ function createData(title, date, time, field, snacks, drinks, opponent ) {
   }
 
 const rows = [
-    createData("Practice Game", "3/04", "?", "?", "", "", "TBD" ),
     createData(1, "3/11", "2 pm", "BHS 8", "", "", "Kapowsin" ),
     createData(2, "3/18", "9 am", "BHS 8", "", "", "Graham" ),
     createData(3, "3/25", "1130 am", "BHS 8", "", "", "Nelson" ),
