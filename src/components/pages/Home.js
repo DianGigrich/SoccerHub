@@ -29,25 +29,10 @@ export default function Home(props) {
                     >
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h2">
-                                First Practice Week
-                            </Typography>
-                            <Typography>
-                                Great job on our first practices! The kids were all excited and hard workers. I know it was cold, but they held up well.
-                            </Typography>
-                           
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item xs={12} sm={12} md={6}>
-                    <Card
-                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                    >
-                        <CardContent sx={{ flexGrow: 1 }}>
-                            <Typography gutterBottom variant="h5" component="h2">
                                 Welcome Elk Plain 3rd and 4th graders!
                             </Typography>
-                            <Typography>
-                                Practices are ... ?Tuesday/Thursday 5-6? Tuesday/Wednesday 6-7pm at Elk Plain.
+                            <Typography variant="h5" component="h2">
+                                Practices are ...(edited) Tuesday/Thursday 5-6pm at Elk Plain.
                             </Typography>
                             <br />
                             <Typography>
@@ -59,7 +44,25 @@ export default function Home(props) {
                         </CardContent>
                     </Card>
                 </Grid>
-                
+                <Grid item xs={12} sm={12} md={6}>
+                    <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                    >
+                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                First Practice Week
+                            </Typography>
+                            <Typography>
+                                Great job on our first practices! The kids were all excited and hard workers. I know it was cold, but they held up well.
+                            </Typography>
+                            <Typography>
+                            ~COMPLETE~
+                            </Typography>
+                           
+                        </CardContent>
+                    </Card>
+                </Grid>
+                               
                 <Grid item xs={12} sm={12} md={6}>
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
