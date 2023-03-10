@@ -69,24 +69,7 @@ export default function Home(props) {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={12} sm={12} md={6}>
-                    <Card
-                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                    >
-                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                First Practice Week
-                            </Typography>
-                            <Typography>
-                                Great job on our first practices! The kids were all excited and hard workers. I know it was cold, but they held up well.
-                            </Typography>
-                            <Typography>
-                            ~COMPLETE~
-                            </Typography>
-                           
-                        </CardContent>
-                    </Card>
-                </Grid>
+ 
                                
                 <Grid item xs={12} sm={12} md={6}>
                     <Card
@@ -107,6 +90,21 @@ export default function Home(props) {
                                 3/21/2023 Tuesday - Spring Orchestra Concert
                                </ListItem>
                             </List>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                               <Grid item xs={12} sm={12} md={6}>
+                    <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                    >
+                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                First Practice Week
+                            </Typography>
+                            <Typography>
+                            ~COMPLETE~
+                            </Typography>
+                           
                         </CardContent>
                     </Card>
                 </Grid>
