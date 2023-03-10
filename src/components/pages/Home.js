@@ -23,6 +23,31 @@ export default function Home(props) {
                 </Typography>
             </Container>
             <Grid container spacing={2} sx={{ p: 4, bgcolor: "#ccbc94" }}>
+            <Grid item xs={12} sm={12} md={6}>
+                    <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                    >
+                        <CardContent sx={{ flexGrow: 1 }}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                First Game This Saturday!
+                            </Typography>
+                            <Typography variant="h5" component="h2">
+                            3/11, 2 pm, BHS 8
+                            </Typography>
+                            <br />
+                            <Typography>
+                                 Reminders - No Jewelry, No Dogs. Wear SHIN GUARDS! 
+                            </Typography>
+                            <Typography>
+                               Parent/Guardians: It's ALWAYS windy on the game fields, so prepare thyselves.
+                            </Typography>
+                            <br />
+                            <Typography>
+                                I look forward to seeing all 12 Dragons on Saturday! ROAR
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
                 <Grid item xs={12} sm={12} md={6}>
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}

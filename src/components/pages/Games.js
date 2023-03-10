@@ -9,17 +9,17 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export default function Games(props) {
   const navigate = useNavigate()
-function createData(title, date, time, field, snacks, drinks, opponent ) {
-    return { title, date, time, field, snacks, drinks, opponent };
+function createData(title, date, time, field, snacks, opponent ) {
+    return { title, date, time, field, snacks, opponent };
   }
 
 const rows = [
-    createData(1, "3/11", "2 pm", "BHS 8", "", "", "Kapowsin" ),
-    createData(2, "3/18", "9 am", "BHS 8", "", "", "Graham" ),
-    createData(3, "3/25", "1130 am", "BHS 8", "", "", "Nelson" ),
-    createData(4, "3/27", "5:15 pm", "BMS 3", "", "", "Centennial" ),
-    createData(5, "4/1", "9:15 am", "Art Crate 2", "", "", "Rocky Ridge" ),
-    createData(6, "4/15", "10:15 am", "BHS 8", "", "", "Thompson" )
+    createData(1, "3/11", "2 pm", "BHS 8", "Melissa", "Kapowsin" ),
+    createData(2, "3/18", "9 am", "BHS 8", "Natalie", "Graham" ),
+    createData(3, "3/25", "1130 am", "BHS 8", "Diana", "Nelson" ),
+    createData(4, "3/27", "5:15 pm", "BMS 3", "Heather", "Centennial" ),
+    createData(5, "4/1", "9:15 am", "Art Crate 2", "Ashley", "Rocky Ridge" ),
+    createData(6, "4/15", "10:15 am", "BHS 8", "Dian", "Thompson" )
 
 ]
     return (
@@ -47,22 +47,17 @@ const rows = [
             <TableCell  key="time">Time</TableCell>
             <TableCell key="field" align="left">Field</TableCell>
             <TableCell key="snakcs" align="left">Snacks</TableCell>
-            <TableCell key="drinks" align="left">Drinks</TableCell>
             <TableCell key="opp" align="left">Opponent</TableCell>
           </TableRow>
         </TableHead>
         <TableBody sx={{ }}>
           {rows.map((row) => (
-            <TableRow hover
-              key={row.title}
-              sx={{ '&:first-of-type th, &:last-child th': {  fontSize: "1.25rem"}, '&:first-of-type td, &:last-child td': {  fontSize: "1rem"} }}
-            >
+            <TableRow hover key={row.title}>
               <TableCell component="th" scope="row" key={row.index}><strong>{row.title}</strong></TableCell>
               <TableCell align="left" key={row.index}>{row.date}</TableCell>
               <TableCell align="left" key={row.index}>{row.time}</TableCell>
               <TableCell align="left" key={row.index}>{row.field}</TableCell>
               <TableCell align="left" key={row.index}>{row.snacks}</TableCell>
-              <TableCell align="left" key={row.index}>{row.drinks}</TableCell>
               <TableCell align="left" key={row.index}>{row.opponent}</TableCell>
             </TableRow>
           ))}
