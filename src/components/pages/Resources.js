@@ -27,10 +27,6 @@ export default function Resources(props) {
                     <Link sx={{ p: 4 }} color="inherit" href={Map} underline="hover" target="_blank">Facility Map
                         </Link>
                     </Typography>
-                    <Typography variant="h4" sx={{ p: 4, bgcolor: "#ccbc94" }}>
-                    <Link sx={{ p: 4 }} color="inherit" href={Practice} underline="hover" target="_blank">Practice Game Schedule
-                        </Link>
-                    </Typography>
                     
             </Container>
             <Container>
