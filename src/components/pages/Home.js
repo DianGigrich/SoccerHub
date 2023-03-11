@@ -91,6 +91,19 @@ export default function Home(props) {
                                </ListItem>
                             </List>
                         </CardContent>
+                        <CardContent sx={{ flexGrow: 1 }}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                               Team Pictures!
+                            </Typography>
+                            <List>
+                               <ListItem>
+                                3/18/2023 Saturday at 12pm (our game is at 9am)
+                               </ListItem>
+                               <ListItem>
+                               @ Spanaway Lake High School cafeteria
+                               </ListItem>
+                            </List>
+                        </CardContent>
                     </Card>
                 </Grid>
                                <Grid item xs={12} sm={12} md={6}>

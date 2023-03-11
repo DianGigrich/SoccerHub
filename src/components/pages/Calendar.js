@@ -9,6 +9,7 @@ export default function Calendar(props) {
         { title: 'Cancelled', date: '2023-03-14' },
         { title: 'Cancelled?', date: '2023-03-15'},
         { title: 'Cancelled', date: '2023-03-16' },
+        { title: '12pm pics', date: '2023-03-18' },
         { title: 'Cancelled', date: '2023-03-21' },
         { title: '2pm BHS 8', date: '2023-03-11'},
         { title: '9am BHS 8', date: '2023-03-18'},
