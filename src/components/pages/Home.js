@@ -81,16 +81,7 @@ export default function Home(props) {
                             </Typography>
                             <List>
                                   <ListItem>
-                                OK WE'RE WORKING ON THIS. STILL TRYING TO HAVE PRACTICE
-                               </ListItem>
-                               <ListItem>
-                                3/14/2023 Tuesday - Battle of the Books
-                               </ListItem>
-                               <ListItem>
-                                3/16/2023 Thursday - Spring Band Concert
-                               </ListItem>
-                               <ListItem>
-                                3/21/2023 Tuesday - Spring Orchestra Concert
+                                    No longer applicable! Still holding practices as usual!
                                </ListItem>
                             </List>
                         </CardContent>

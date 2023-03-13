@@ -1,11 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Button, Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-
-
-
-
+import { Button, Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 
 export default function Games(props) {
   const navigate = useNavigate()
@@ -52,7 +48,7 @@ const rows = [
         </TableHead>
         <TableBody sx={{ }}>
           {rows.map((row) => (
-            <TableRow hover key={row.title}>
+            <TableRow  hover key={row.title} >
               <TableCell component="th" scope="row" key={row.index}><strong>{row.title}</strong></TableCell>
               <TableCell align="left" key={row.index}>{row.date}</TableCell>
               <TableCell align="left" key={row.index}>{row.time}</TableCell>
