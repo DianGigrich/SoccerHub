@@ -80,6 +80,9 @@ export default function Home(props) {
                                Practice Cancellations due to School Events
                             </Typography>
                             <List>
+                                  <ListItem>
+                                OK WE'RE WORKING ON THIS. STILL TRYING TO HAVE PRACTICE
+                               </ListItem>
                                <ListItem>
                                 3/14/2023 Tuesday - Battle of the Books
                                </ListItem>
