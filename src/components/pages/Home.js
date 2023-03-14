@@ -23,31 +23,7 @@ export default function Home(props) {
                 </Typography>
             </Container>
             <Grid container spacing={2} sx={{ p: 4, bgcolor: "#ccbc94" }}>
-            <Grid item xs={12} sm={12} md={6}>
-                    <Card
-                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                    >
-                        <CardContent sx={{ flexGrow: 1 }}>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                First Game This Saturday!
-                            </Typography>
-                            <Typography variant="h5" component="h2">
-                            3/11, 2 pm, BHS 8
-                            </Typography>
-                            <br />
-                            <Typography>
-                                 Reminders - No Jewelry, No Dogs. Wear SHIN GUARDS! 
-                            </Typography>
-                            <Typography>
-                               Parent/Guardians: It's ALWAYS windy on the game fields, so prepare thyselves.
-                            </Typography>
-                            <br />
-                            <Typography>
-                                I look forward to seeing all 12 Dragons on Saturday! ROAR
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                </Grid>
+                
                 <Grid item xs={12} sm={12} md={6}>
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
@@ -69,38 +45,52 @@ export default function Home(props) {
                         </CardContent>
                     </Card>
                 </Grid>
- 
-                               
+
+
                 <Grid item xs={12} sm={12} md={6}>
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h2">
-                               Practice Cancellations due to School Events
+                                Practice Cancellations due to School Events
                             </Typography>
                             <List>
-                                  <ListItem>
+                                <ListItem>
                                     No longer applicable! Still holding practices as usual!
-                               </ListItem>
+                                </ListItem>
                             </List>
                         </CardContent>
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h2">
-                               Team Pictures!
+                                Team Pictures
                             </Typography>
                             <List>
-                               <ListItem>
-                                3/18/2023 Saturday at 12pm (our game is at 9am)
-                               </ListItem>
-                               <ListItem>
-                               @ Spanaway Lake High School cafeteria
-                               </ListItem>
+                                <ListItem>
+                                    3/18/2023 Saturday at 12pm (our game is at 9am)
+                                </ListItem>
+                                <ListItem>
+                                    @ Spanaway Lake High School cafeteria
+                                </ListItem>
                             </List>
                         </CardContent>
                     </Card>
                 </Grid>
-                               <Grid item xs={12} sm={12} md={6}>
+                <Grid item xs={12} sm={12} md={6} >
+                    <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                    >
+                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                First Game This Saturday!
+                            </Typography>
+                            <Typography variant="h5" component="h2">
+                                Great Job on our first game!
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6}>
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
@@ -109,9 +99,9 @@ export default function Home(props) {
                                 First Practice Week
                             </Typography>
                             <Typography>
-                            ~COMPLETE~
+                                ~COMPLETE~
                             </Typography>
-                           
+
                         </CardContent>
                     </Card>
                 </Grid>
@@ -121,10 +111,10 @@ export default function Home(props) {
                     >
                         <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
                             <Typography gutterBottom variant="h5" component="h2">
-                                Custom Names for Jerseys! 
+                                Custom Names for Jerseys!
                             </Typography>
                             <Typography>
-                              ~COMPLETE~
+                                ~COMPLETE~
                             </Typography>
                         </CardContent>
                     </Card>

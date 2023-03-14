@@ -1,7 +1,8 @@
 import React from 'react';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
+import '../index.css'
 
 function Header(props) {
 
@@ -14,10 +15,13 @@ function Header(props) {
                     component="h2"
                     variant="h2"
                     align="center"
-                    color= "red"
+                    color= "#4aedc4"
                     sx={{ flex: 1, letterSpacing: 6 }}
+                    className="dragons"
                 >
-                    Dragons
+                    <LocalFireDepartmentIcon sx={{ color:"red"}}/>
+                    <strong>Dragons</strong>
+                    <LocalFireDepartmentIcon sx={{ color:"red"}}/>
                 </Typography>
 
             </Toolbar>
