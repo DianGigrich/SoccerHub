@@ -7,6 +7,7 @@ import Navbar from "./components/Navigationbar";
 import Home from "./components/pages/Home";
 import Games from "./components/pages/Games";
 import Resources from "./components/pages/Resources";
+import Count from "./components/pages/Count";
 import Error from "./components/pages/Error";
 import Calendar from "./components/pages/Calendar";
 
@@ -43,10 +44,55 @@ const theme = createTheme({
 
 function App() {
 
-  const data = {
-    title: "practice game",
-    date: "2023-3-04"
+  const kids = [  {
+    name: "Leah",
+    number: 1
+  },
+  {
+    name: "Ava",
+    number: 2
+  },
+  {
+    name: "Dakota",
+    number: 3
+  },
+  {
+    name: "Arya",
+    number: 4
+  },
+  {
+    name: "Sofia",
+    number: 5
+  },
+  {
+    name: "Leona",
+    number: 6
+  },
+ {
+    name: "Makenna",
+    number: 7
+  },
+  {
+    name: "Ahmiyah",
+    number: 8
+  },
+  {
+    name: "Emrie",
+    number: 9
+  },
+  {
+    name: "Kessa",
+    number: 10
+  },
+  {
+    name: "Charlotte",
+    number: 11
+  },
+  {
+    name: "Zoey",
+    number: 12
   }
+  ]
 
   return (
     <Container>
@@ -60,7 +106,8 @@ function App() {
           <Route path="/resources" element={<Resources />} />
 
           <Route path="/games" element={<Games />} />
-          <Route path="/calendar" element={<Calendar {...data}/>} />
+          <Route path="/calendar" element={<Calendar/>} />
+          <Route path="/count" element={<Count {...kids} />} />
 
           <Route path="*" element={<Error/>} />
         </Routes>

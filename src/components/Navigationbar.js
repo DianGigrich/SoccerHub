@@ -29,6 +29,8 @@ export default function Navigationbar(props) {
         <Tab textColor="inherit" value="Games" label="Games" onClick={() => navigate('/Games')} />
 
         <Tab textColor="primary" value="Resources" label="Resources, Links" onClick={() => navigate('/Resources')} />
+        <Tab textColor="inherit" value="Count" label="Count" onClick={() => navigate('/count')} />
+
       </Tabs>
     </Box>
 
