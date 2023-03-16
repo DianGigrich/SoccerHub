@@ -7,6 +7,7 @@ import Navbar from "./components/Navigationbar";
 import Home from "./components/pages/Home";
 import Games from "./components/pages/Games";
 import Resources from "./components/pages/Resources";
+import Count from "./components/pages/Count";
 import Error from "./components/pages/Error";
 import Calendar from "./components/pages/Calendar";
 
@@ -43,10 +44,7 @@ const theme = createTheme({
 
 function App() {
 
-  const data = {
-    title: "practice game",
-    date: "2023-3-04"
-  }
+
 
   return (
     <Container>
@@ -60,7 +58,8 @@ function App() {
           <Route path="/resources" element={<Resources />} />
 
           <Route path="/games" element={<Games />} />
-          <Route path="/calendar" element={<Calendar {...data}/>} />
+          <Route path="/calendar" element={<Calendar/>} />
+          <Route path="/count" element={<Count />} />
 
           <Route path="*" element={<Error/>} />
         </Routes>
