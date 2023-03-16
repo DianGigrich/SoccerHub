@@ -44,55 +44,7 @@ const theme = createTheme({
 
 function App() {
 
-  const kids = [  {
-    name: "Leah",
-    number: 1
-  },
-  {
-    name: "Ava",
-    number: 2
-  },
-  {
-    name: "Dakota",
-    number: 3
-  },
-  {
-    name: "Arya",
-    number: 4
-  },
-  {
-    name: "Sofia",
-    number: 5
-  },
-  {
-    name: "Leona",
-    number: 6
-  },
- {
-    name: "Makenna",
-    number: 7
-  },
-  {
-    name: "Ahmiyah",
-    number: 8
-  },
-  {
-    name: "Emrie",
-    number: 9
-  },
-  {
-    name: "Kessa",
-    number: 10
-  },
-  {
-    name: "Charlotte",
-    number: 11
-  },
-  {
-    name: "Zoey",
-    number: 12
-  }
-  ]
+
 
   return (
     <Container>
@@ -107,7 +59,7 @@ function App() {
 
           <Route path="/games" element={<Games />} />
           <Route path="/calendar" element={<Calendar/>} />
-          <Route path="/count" element={<Count {...kids} />} />
+          <Route path="/count" element={<Count />} />
 
           <Route path="*" element={<Error/>} />
         </Routes>
