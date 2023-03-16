@@ -68,12 +68,11 @@ export default function Count(props) {
                     color="text.primary"
                     gutterBottom
                 >
-                    Potatos
-                           <Timer/>
+                 In-Game Timers (work in progress)
                 </Typography>
                 
-            {kids.map((kids)=><Typography>{kids.name}{kids.number}</Typography>)}
-        
+            {kids.map((kids)=><Box sx={{border: "3px solid"}}><Typography><strong>{kids.name} &emsp; {kids.number}</strong><Timer/></Typography> </Box>)}
+       
             </Container>
         </Box>
     )

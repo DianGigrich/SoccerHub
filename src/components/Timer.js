@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Button, Typography, Box } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import '../index.css'
 export default function Timer(props) {
     const [timer, setTimer] = useState(0)
@@ -47,7 +47,6 @@ export default function Timer(props) {
     return (
         <>
             <Typography className="stopwatch">{formatTime()}</Typography>
-            <Box id="timeContainer">
                 {
                     !isActive && !isPaused ?
                         <Button onClick={handleStart}>Start</Button>
@@ -57,7 +56,6 @@ export default function Timer(props) {
                         )
                 }
                 <Button onClick={handleReset} disabled={!isActive}>Reset</Button>
-            </Box>
         </>
     )
 }
