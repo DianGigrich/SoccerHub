@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Grid, Card, CardContent, Typography, List, ListItem } from '@mui/material';
+import { Box, Container, Grid, Card, CardContent, Typography } from '@mui/material';
 
 
 export default function Home(props) {
