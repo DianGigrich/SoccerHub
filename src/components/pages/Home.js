@@ -66,24 +66,18 @@ export default function Home(props) {
                             <Typography gutterBottom variant="h5" component="h2">
                                 Practice Cancellations due to School Events
                             </Typography>
-                            <List>
-                                <ListItem>
-                                    No longer applicable! Still holding practices as usual!
-                                </ListItem>
-                            </List>
+                            <Typography>
+                                ~COMPLETE~
+                            </Typography>
                         </CardContent>
-                        <CardContent sx={{ flexGrow: 1 }}>
+                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
                             <Typography gutterBottom variant="h5" component="h2">
                                 Team Pictures
                             </Typography>
-                            <List>
-                                <ListItem>
-                                    3/18/2023 Saturday at 12pm (our game is at 9am)
-                                </ListItem>
-                                <ListItem>
-                                    @ Spanaway Lake High School cafeteria
-                                </ListItem>
-                            </List>
+                                <Typography>
+                                ~COMPLETE~
+                            </Typography>
+                          
                         </CardContent>
                     </Card>
                 </Grid>
