@@ -62,7 +62,7 @@ export default function Home(props) {
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
-                        <CardContent sx={{ flexGrow: 1 }}>
+                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
                             <Typography gutterBottom variant="h5" component="h2">
                                 Practice Cancellations due to School Events
                             </Typography>
