@@ -48,13 +48,13 @@ export default function Timer(props) {
             <Typography className="stopwatch" sx={{p:2}}>{formatTime()}</Typography>
                 {
                     !isActive && !isPaused ?
-                        <Button onClick={handleStart}>Start</Button>
+                        <Button onClick={handleStart} sx={{ border:"2px solid green"}}>Start</Button>
                         : (
-                            isPaused ? <Button onClick={handlePause}>Pause</Button> :
-                                <Button onClick={handleResume}>Resume</Button>
+                            isPaused ? <Button onClick={handlePause} sx={{ border:"2px solid yellow"}}>Pause</Button> :
+                                <Button onClick={handleResume} sx={{ border:"2px solid green"}}>Resume</Button>
                         )
                 }
-                <Button onClick={handleReset} disabled={!isActive}>Reset</Button>
+                <Button onClick={handleReset} disabled={!isActive} sx={{ border:"2px solid red"}}>Reset</Button>
         </>
     )
 }
