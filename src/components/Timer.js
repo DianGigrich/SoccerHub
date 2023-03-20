@@ -33,20 +33,19 @@ export default function Timer(props) {
         setIsPaused(false)
         setTimer(0)
     }
-    const formatTime = () => {
+    const formatTime = () => { 
         const getSeconds = `0${(timer % 60)}`.slice(-2)
         const minutes = `${Math.floor(timer / 60)}`
         const getMinutes = `0${minutes % 60}`.slice(-2)
-        const getHours = `0${Math.floor(timer / 3600)}`.slice(-2)
 
-        return `${getHours} : ${getMinutes} : ${getSeconds}`
+        return `${getMinutes} : ${getSeconds}`
     }
 
 
 
     return (
         <>
-            <Typography className="stopwatch">{formatTime()}</Typography>
+            <Typography className="stopwatch" sx={{p:2}}>{formatTime()}</Typography>
                 {
                     !isActive && !isPaused ?
                         <Button onClick={handleStart}>Start</Button>

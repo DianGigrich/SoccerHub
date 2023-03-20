@@ -24,6 +24,17 @@ export default function Home(props) {
             </Container>
             <Grid container spacing={2} sx={{ p: 4, bgcolor: "#ccbc94" }}>
                 
+            <Grid item xs={12} sm={12} md={6}>
+                    <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                    >
+                        <CardContent sx={{ flexGrow: 1 }}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                We Won!!! Great Job!!!!
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
                 <Grid item xs={12} sm={12} md={6}>
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
