@@ -98,6 +98,9 @@ export default function Home(props) {
                             <Typography variant="h5" component="h2">
                                 Great Job on our first game!
                             </Typography>
+                            <Typography>
+                                ~COMPLETE~
+                            </Typography>
                         </CardContent>
                     </Card>
                 </Grid>
