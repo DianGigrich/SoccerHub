@@ -4,8 +4,6 @@ import Rules from '../../assets/Rules.pdf';
 import Map from '../../assets/Map.pdf';
 import Facility from '../../assets/Facility.jpg';
 
-
-
 export default function Resources(props) {
     return (
         <Box sx={{

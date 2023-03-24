@@ -1,14 +1,10 @@
 import React from 'react';
-import { Box, Container, Grid, Card, CardContent, Typography } from '@mui/material';
+import { Container, Grid, Card, CardContent, Typography } from '@mui/material';
 
 
 export default function Home(props) {
     return (
-        <Box sx={{
-            pt: 8,
-            pb: 6,
-        }}
-        >
+<>
             <Container>
 
                 <Typography
@@ -29,8 +25,10 @@ export default function Home(props) {
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
                         <CardContent sx={{ flexGrow: 1 }}>
-                            <Typography gutterBottom variant="h5" component="h1" color="green">
-                                We Won!!! Great Job!!!!
+                            <Typography gutterBottom variant="h5" component="h1">
+                                Saturday 11:30am BHS 8
+                                <br/>
+                                Monday 5:15pm BMS 3
                             </Typography>
                         </CardContent>
                     </Card>
@@ -129,6 +127,6 @@ export default function Home(props) {
 
                 </Grid>
             </Grid>
-        </Box>
+        </>
     )
 }
