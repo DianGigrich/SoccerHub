@@ -30,6 +30,9 @@ export default function Home(props) {
                                 <br/>
                                 Monday 5:15pm BMS 3
                             </Typography>
+                            <Typography>
+                                Please bring a soccer ball to practices if you can. Thanks!
+                            </Typography>
                         </CardContent>
                     </Card>
                 </Grid>
