@@ -26,7 +26,7 @@ export default function Home(props) {
                     >
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h1">
-                                Saturday 11:30am BHS 8
+                                Saturday 11:30am BHS 8 <strong><i>GREAT JOB!</i></strong>
                                 <br/>
                                 Monday 5:15pm BMS 3
                             </Typography>
@@ -42,7 +42,7 @@ export default function Home(props) {
                                 Welcome Elk Plain 3rd and 4th graders!
                             </Typography>
                             <Typography variant="h5" component="h2">
-                                Practices are ...(edited) Tuesday/Thursday 5-6pm at Elk Plain.
+                                Practices are  Tuesday/Thursday 5-6pm at Elk Plain.
                             </Typography>
                             <br />
                             <Typography>
