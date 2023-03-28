@@ -28,7 +28,7 @@ export default function Home(props) {
                             <Typography gutterBottom variant="h5" component="h1">
                                 Saturday 11:30am BHS 8 <strong><i>GREAT JOB!</i></strong>
                                 <br />
-                                Monday 5:15pm BMS 3
+                                Monday 5:15pm BMS 3 <strong><i>GREAT JOB!</i></strong>
                             </Typography>
                             <Typography>
                                 Please bring a soccer ball to practices if you can. Thanks!
