@@ -52,6 +52,20 @@ export default function Home(props) {
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
                         <CardContent sx={{ flexGrow: 1 }}>
+                            <Typography gutterBottom variant="h5" component="h1">
+                                Pictures
+                            </Typography>
+                            <Typography>
+                                Coach picks up pictures sometime around April 11th.  The pictures are online available to order.
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6}>
+                    <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                    >
+                        <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h2">
                                 Welcome Elk Plain 3rd and 4th graders!
                             </Typography>
