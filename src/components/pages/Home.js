@@ -20,23 +20,7 @@ export default function Home(props) {
             </Container>
             <Grid container spacing={2} sx={{ p: 4, bgcolor: "#ccbc94" }}>
 
-                <Grid item xs={12} sm={12} md={6}>
-                    <Card
-                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                    >
-                        <CardContent sx={{ flexGrow: 1 }}>
-                            <Typography gutterBottom variant="h5" component="h1">
-                                Saturday 11:30am BHS 8 <strong><i>GREAT JOB!</i></strong>
-                                <br />
-                                Monday 5:15pm BMS 3 <strong><i>GREAT JOB!</i></strong>
-                            </Typography>
-                            <Typography>
-                                Please bring a soccer ball to practices if you can. Thanks!
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item xs={12} sm={12} md={6}>
+                 <Grid item xs={12} sm={12} md={6}>
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
