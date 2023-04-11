@@ -20,13 +20,16 @@ export default function Home(props) {
             </Container>
             <Grid container spacing={2} sx={{ p: 4, bgcolor: "#ccbc94" }}>
 
-                 <Grid item xs={12} sm={12} md={6}>
+            <Grid item xs={12} sm={12} md={6}>
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h1">
-                                No practices over Spring Break, APR 3 - 7th
+                                Two  more practices and last game!
+                            </Typography>
+                            <Typography>
+                                See you all the 11th and 13th for our last practices!
                             </Typography>
                         </CardContent>
                     </Card>

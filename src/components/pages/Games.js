@@ -16,7 +16,7 @@ const rows = [
     createData(2, "3/18", "9 am", "BHS 8", "Natalie", "W", "Graham" ),
     createData(3, "3/25", "1130 am", "BHS 8", "Diana", "W", "Nelson" ),
     createData(4, "3/27", "5:15 pm", "BMS 3", "Heather", "W", "Centennial" ),
-    createData(5, "4/1", "9:15 am", "Art Crate 2", "Ashley", "", "Rocky Ridge" ),
+    createData(5, "4/1", "9:15 am", "Art Crate 2", "Ashley", "L", "Rocky Ridge" ),
     createData(6, "4/15", "10:15 am", "BHS 8", "Bryanne", "", "Thompson" )
 
 ]
