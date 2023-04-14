@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Card, CardContent, Typography } from '@mui/material';
+import { Container, Grid, Card, CardContent, Typography, Link } from '@mui/material';
 
 
 export default function Home(props) {
@@ -20,16 +20,28 @@ export default function Home(props) {
             </Container>
             <Grid container spacing={2} sx={{ p: 4, bgcolor: "#ccbc94" }}>
 
-            <Grid item xs={12} sm={12} md={6}>
+                <Grid item xs={12} sm={12} md={6}>
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
                         <CardContent sx={{ flexGrow: 1 }}>
                             <Typography gutterBottom variant="h5" component="h1">
-                                Two  more practices and last game!
+                                Season Wrap-Up
                             </Typography>
                             <Typography>
-                                See you all the 11th and 13th for our last practices!
+                                Last game: Saturday BHS 8 @ 10:15am
+                            </Typography>
+                            <Typography variant="h6">
+                                Godfather Pizza Party
+                            </Typography>
+                            <Typography>
+                                15709 Pacific Ave S, Tacoma, WA 98444
+                                <br />
+                                <Link href="https://www.google.com/maps/dir/47.1149994,-122.3578827/godfather's+pizza/@47.1192827,-122.4312808,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x549103ba8cdc7aa3:0xa9fe0022c9480be7!2m2!1d-122.4343099!2d47.114493" target="_blank">Directions</Link>
+                            </Typography>
+                            <Typography>
+                                Certificates and Trophies awarded at party!
+                                <br/> Will Coach be in a dress? Better win the game!
                             </Typography>
                         </CardContent>
                     </Card>
@@ -43,7 +55,7 @@ export default function Home(props) {
                                 Pictures
                             </Typography>
                             <Typography>
-                                Coach picks up pictures sometime around April 11th.  The pictures are online available to order.
+                                Coach picks up pictures sometime around April 11th.  The pictures are online available to order. Currently trying to figure this out as of 4/14
                             </Typography>
                         </CardContent>
                     </Card>
