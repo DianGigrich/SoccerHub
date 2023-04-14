@@ -32,7 +32,7 @@ export default function Home(props) {
                                 Last game: Saturday BHS 8 @ 10:15am
                             </Typography>
                             <Typography variant="h6">
-                                Godfather Pizza Party
+                                Godfather Pizza Party 4/23 2pm
                             </Typography>
                             <Typography>
                                 15709 Pacific Ave S, Tacoma, WA 98444
@@ -64,15 +64,11 @@ export default function Home(props) {
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
-                        <CardContent sx={{ flexGrow: 1 }}>
+                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
                             <Typography gutterBottom variant="h5" component="h2">
                                 Welcome Elk Plain 3rd and 4th graders!
                             </Typography>
-                            <Typography variant="h5" component="h2">
-                                Practices are  Tuesday/Thursday 5-6pm at Elk Plain.
-                            </Typography>
-                            <br />
-                            <Typography>
+                                    <Typography>
                                 Head Coach: &ensp; Tony Hamilton &emsp; (253)224-0653
                             </Typography>
                             <Typography>
