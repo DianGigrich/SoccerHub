@@ -28,9 +28,6 @@ export default function Home(props) {
                             <Typography gutterBottom variant="h5" component="h1">
                                 Season Wrap-Up
                             </Typography>
-                            <Typography>
-                                Last game: Saturday BHS 8 @ 10:15am
-                            </Typography>
                             <Typography variant="h6">
                                 Godfather Pizza Party 4/23 2pm
                             </Typography>
@@ -41,7 +38,10 @@ export default function Home(props) {
                             </Typography>
                             <Typography>
                                 Certificates and Trophies awarded at party!
-                                <br/> Will Coach be in a dress? Better win the game!
+                                <br/> If you can, bring $7 for the trophy.
+                            </Typography>
+                            <Typography>
+                                Note from Dian: I can't make it, and I miss you already!
                             </Typography>
                         </CardContent>
                     </Card>
@@ -50,12 +50,12 @@ export default function Home(props) {
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
-                        <CardContent sx={{ flexGrow: 1 }}>
+                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94"  }}>
                             <Typography gutterBottom variant="h5" component="h1">
                                 Pictures
                             </Typography>
                             <Typography>
-                                Coach picks up pictures sometime around April 11th.  The pictures are online available to order. Currently trying to figure this out as of 4/14
+                                ~COMPLETE~
                             </Typography>
                         </CardContent>
                     </Card>
