@@ -24,25 +24,11 @@ export default function Home(props) {
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
-                        <CardContent sx={{ flexGrow: 1 }}>
+                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
                             <Typography gutterBottom variant="h5" component="h1">
-                                Season Wrap-Up
+                                Season Wrap-Up ~Complete~
                             </Typography>
-                            <Typography variant="h6">
-                                Godfather Pizza Party 4/23 2pm
-                            </Typography>
-                            <Typography>
-                                15709 Pacific Ave S, Tacoma, WA 98444
-                                <br />
-                                <Link href="https://www.google.com/maps/dir/47.1149994,-122.3578827/godfather's+pizza/@47.1192827,-122.4312808,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x549103ba8cdc7aa3:0xa9fe0022c9480be7!2m2!1d-122.4343099!2d47.114493" target="_blank">Directions</Link>
-                            </Typography>
-                            <Typography>
-                                Certificates and Trophies awarded at party!
-                                <br/> If you can, bring $7 for the trophy.
-                            </Typography>
-                            <Typography>
-                                Note from Dian: I can't make it, and I miss you already!
-                            </Typography>
+         
                         </CardContent>
                     </Card>
                 </Grid>
