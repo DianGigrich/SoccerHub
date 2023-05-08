@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Card, CardContent, Typography, Link } from '@mui/material';
+import { Container, Grid, Card, CardContent, Typography} from '@mui/material';
 
 
 export default function Home(props) {
@@ -26,7 +26,10 @@ export default function Home(props) {
                     >
                         <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
                             <Typography gutterBottom variant="h5" component="h1">
-                                Season Wrap-Up ~Complete~
+                                Season Wrap-Up 
+                            </Typography>
+                            <Typography>
+                                ~COMPLETE~
                             </Typography>
          
                         </CardContent>
