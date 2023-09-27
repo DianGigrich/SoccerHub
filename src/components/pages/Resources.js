@@ -11,29 +11,38 @@ export default function Resources(props) {
             pb: 6,
         }}
         >
+            <Typography
+                component="h1"
+                variant="h2"
+                align="center"
+                color="text.primary"
+                gutterBottom
+            >
+                Resources
+            </Typography>
             <Container>
                 <Typography variant="h4" sx={{ p: 4, bgcolor: "#ccbc94" }}>
                     <Link sx={{ p: 4 }} color="inherit" href={Rules} underline="hover" target="_blank">Rules
                     </Link>
                 </Typography>
-                    <Typography variant="h4" sx={{ p: 4, bgcolor: "#ccbc94" }}>
+                <Typography variant="h4" sx={{ p: 4, bgcolor: "#ccbc94" }}>
                     <Link sx={{ p: 4 }} color="inherit" href="https://bethelrec.org/schedule/412109/3rd4th-girls" underline="hover" target="_blank">Bethel Rec Soccer Games Website
-                        </Link>
-                    </Typography>
-                    <Typography variant="h4" sx={{ p: 4, bgcolor: "#ccbc94" }}>
+                    </Link>
+                </Typography>
+                <Typography variant="h4" sx={{ p: 4, bgcolor: "#ccbc94" }}>
                     <Link sx={{ p: 4 }} color="inherit" href={Map} underline="hover" target="_blank">Facility Map
-                        </Link>
-                    </Typography>
-                    
+                    </Link>
+                </Typography>
+
             </Container>
             <Container>
-                       <CardMedia
-        component="img"
-        height="auto"
-        image={Facility}
-        alt="facility map"
-      />
- </Container>
+                <CardMedia
+                    component="img"
+                    height="auto"
+                    image={Facility}
+                    alt="facility map"
+                />
+            </Container>
         </Box>
     )
 }

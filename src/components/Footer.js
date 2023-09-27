@@ -37,7 +37,7 @@ export default function StickyFooter({props}) {
       >
         <Container maxWidth="sm">
           <Typography  variant="body1" gutterBottom>
-            Hi! Dian is the author/creator.
+            Hi! Dian has created this site.
           </Typography>
           <Copyright />
         </Container>

@@ -12,8 +12,6 @@ export default function Calendar(props) {
         { title: '11:30am BHS 8', date: '2023-03-25'},
         { title: '5:15pm BMS 3', date: '2023-03-27'},
         { title: '9:15am Art Crate 2', date: '2023-04-01'},
-
-
         { title: '10:15am BHS 8', date: '2023-04-15'}
 
       ], color: "teal"

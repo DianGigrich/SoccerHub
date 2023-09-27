@@ -1,11 +1,14 @@
 import React from 'react';
-import { Container, Grid, Card, CardContent, Typography} from '@mui/material';
+import { Container, Grid, Card, CardContent, Typography } from '@mui/material';
 
 
 export default function Home(props) {
     return (
         <>
-            <Container>
+            <Container sx={{
+                pt: 8,
+                pb: 6,
+            }}>
 
                 <Typography
                     component="h1"
@@ -13,7 +16,6 @@ export default function Home(props) {
                     align="center"
                     color="text.primary"
                     gutterBottom
-                    className="welcome"
                 >
                     Announcements
                 </Typography>
@@ -26,12 +28,12 @@ export default function Home(props) {
                     >
                         <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
                             <Typography gutterBottom variant="h5" component="h1">
-                                Season Wrap-Up 
+                                Season Wrap-Up
                             </Typography>
                             <Typography>
                                 ~COMPLETE~
                             </Typography>
-         
+
                         </CardContent>
                     </Card>
                 </Grid>
@@ -39,7 +41,7 @@ export default function Home(props) {
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
-                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94"  }}>
+                        <CardContent sx={{ flexGrow: 1, bgcolor: "#ccbc94" }}>
                             <Typography gutterBottom variant="h5" component="h1">
                                 Pictures
                             </Typography>
@@ -57,7 +59,7 @@ export default function Home(props) {
                             <Typography gutterBottom variant="h5" component="h2">
                                 Welcome Elk Plain 3rd and 4th graders!
                             </Typography>
-                                    <Typography>
+                            <Typography>
                                 Head Coach: &ensp; Tony Hamilton &emsp; (253)224-0653
                             </Typography>
                             <Typography>
