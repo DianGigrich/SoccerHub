@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Card, CardContent, Typography } from '@mui/material';
+import { Container, Grid, Card, CardContent, Typography, Box } from '@mui/material';
 
 
 export default function Home(props) {
@@ -10,7 +10,8 @@ export default function Home(props) {
                 pb: 6,
             }}>
 
-                <Typography
+                <Box
+                sx={{ border: 10, borderColor: 'primary.main'}}
                     component="h1"
                     variant="h2"
                     align="center"
@@ -18,7 +19,7 @@ export default function Home(props) {
                     gutterBottom
                 >
                     Announcements
-                </Typography>
+                </Box>
             </Container>
             <Grid container spacing={2} sx={{ p: 4, bgcolor: "#ccbc94" }}>
 

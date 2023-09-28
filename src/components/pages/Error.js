@@ -11,12 +11,14 @@ export default function Error() {
         >
             <Container>
                 <Typography
+                
                     component="h1"
                     variant="h2"
                     align="center"
                     color="text.primary"
                     gutterBottom
                     className="welcome"
+                    
                 >
                     404 site not found
                 </Typography>

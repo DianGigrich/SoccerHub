@@ -30,13 +30,12 @@ export default function StickyFooter({props}) {
         sx={{
           py: 3,
           px: 2,
-          position:"fixed",
-          bottom:0
-          
+          // position:"fixed",
+          bottom:0,
         }}
       >
         <Container maxWidth="sm">
-          <Typography  variant="body1" gutterBottom>
+          <Typography variant="body1" gutterBottom>
             Hi! Dian has created this site.
           </Typography>
           <Copyright />
