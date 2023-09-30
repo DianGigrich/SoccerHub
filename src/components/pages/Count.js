@@ -62,6 +62,7 @@ export default function Count(props) {
     >
       <Container>
         <Typography
+          sx={{ border: 2, borderColor: 'primary.main'}}
           component="h1"
           variant="h2"
           align="center"

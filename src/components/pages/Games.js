@@ -27,6 +27,7 @@ export default function Games(props) {
     }}
     >
       <Typography
+      sx={{ border: 2, borderColor: 'primary.main'}}
         component="h1"
         variant="h2"
         align="center"

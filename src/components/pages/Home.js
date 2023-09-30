@@ -10,8 +10,8 @@ export default function Home(props) {
                 pb: 6,
             }}>
 
-                <Box
-                sx={{ border: 10, borderColor: 'primary.main'}}
+                <Typography
+                    sx={{ border: 2, borderColor: 'primary.main'}}
                     component="h1"
                     variant="h2"
                     align="center"
@@ -19,7 +19,7 @@ export default function Home(props) {
                     gutterBottom
                 >
                     Announcements
-                </Box>
+                </Typography>
             </Container>
             <Grid container spacing={2} sx={{ p: 4, bgcolor: "#ccbc94" }}>
 
