@@ -5,11 +5,9 @@ import StickyFooter from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navigationbar";
 import Home from "./components/pages/Home";
-import Games from "./components/pages/Games";
-import Resources from "./components/pages/Resources";
-import Count from "./components/pages/Count";
+
 import Error from "./components/pages/Error";
-import Calendar from "./components/pages/Calendar";
+
 
 import {
   ThemeProvider,
