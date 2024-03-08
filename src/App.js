@@ -5,8 +5,11 @@ import StickyFooter from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navigationbar";
 import Home from "./components/pages/Home";
-
 import Error from "./components/pages/Error";
+import Count from "./components/pages/Count";
+import Calendar from "./components/pages/Calendar";
+import Games from "./components/pages/Games";
+import Resources from "./components/pages/Resources";
 
 
 import {
@@ -54,7 +57,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resources" element={<Resources />} />
-
           <Route path="/games" element={<Games />} />
           <Route path="/calendar" element={<Calendar/>} />
           <Route path="/count" element={<Count />} />

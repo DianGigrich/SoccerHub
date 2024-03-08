@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Container, Typography } from '@mui/material/';
+import { Box, Container } from '@mui/material/';
 import { checkPassword, validateEmail } from '../utils/helpers';
 
 function Form() {
@@ -50,13 +50,6 @@ function Form() {
         <Box>
         <p>Hello {userName}</p>
         <form className="form">
-          <input
-            value={email}
-            name="email"
-            onChange={handleInputChange}
-            type="email"
-            placeholder="email"
-          />
           <input
             value={userName}
             name="userName"
