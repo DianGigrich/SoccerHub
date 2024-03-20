@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Box, Tabs, Tab } from '@mui/material/';
+import Form from '/form';
 
 
 export default function Navigationbar(props) {
@@ -31,6 +32,7 @@ export default function Navigationbar(props) {
 
         <Tab textColor="primary" value="Resources" label="Resources, Links" onClick={() => navigate('/Resources')} />
         <Tab textColor="inherit" value="Count" label="Count" onClick={() => navigate('/Count')} />
+        <Form/>
         
 
       </Tabs>
