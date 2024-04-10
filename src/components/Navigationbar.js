@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Box, Tabs, Tab } from '@mui/material/';
-import Form from '/form';
+import Form from './Form';
 
 
 export default function Navigationbar(props) {

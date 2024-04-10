@@ -1,22 +1,20 @@
 import React, { useState } from "react";
 import { Box, Container } from '@mui/material/';
-import { checkPassword, validateEmail } from '../utils/helpers';
 
 function Form() {
-    const [email, setEmail] = useState('');
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
-
     const [errorMessage, setErrorMessage] = useState('');
+
+    const Name = "DiansHub1";
+    const Pass = "AutoCheck1";
 
     const handleInputChange = (e) => {
         const { target } = e;
         const inputType = target.name;
         const inputValue = target.value;
 
-        if (inputType === 'email') {
-            setEmail(inputValue);
-        } else if (inputType === 'userName') {
+       if (inputType === 'userName') {
             setUserName(inputValue);
         } else {
             setPassword(inputValue)
@@ -26,11 +24,11 @@ function Form() {
     const handleFormSubmit = (e) => {
         e.perventDefault();
 
-        if (!validateEmail(email) || !userName) {
+        if (Name != userName) {
             setErrorMessage('Email or username is invalid');
         }
 
-        if (!checkPassword(password)) {
+        if (Pass != password) {
             setErrorMessage(
                 `Choose a more secure password: ${userName}`
             );
@@ -39,9 +37,6 @@ function Form() {
 
         setUserName('');
 
-        setPassword('');
-
-        setEmail('');
 
         alert('Hello $(userName)');
     };
