@@ -25,12 +25,12 @@ function Form() {
         e.perventDefault();
 
         if (Name != userName) {
-            setErrorMessage('Email or username is invalid');
+            setErrorMessage('Username is invalid');
         }
 
         if (Pass != password) {
             setErrorMessage(
-                `Choose a more secure password: ${userName}`
+                `Incorrect password: ${userName}`
             );
             return;
         }
@@ -50,14 +50,14 @@ function Form() {
             name="userName"
             onChange={handleInputChange}
             type="text"
-            placeholder="username"
+            placeholder="Username"
           />
           <input
           value={password}
           name="password"
           onChange={handleInputChange}
           type="password"
-          placeholder="password"
+          placeholder="Password"
           />
           <button type="button" onClick={handleFormSubmit}>
             Submit
