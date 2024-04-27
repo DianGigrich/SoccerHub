@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { LinearProgress, Box, Typography } from "@mui/material";
-import { useState } from "react";
 
 Progress.propTypes = {
     /**
