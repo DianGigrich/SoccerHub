@@ -18,7 +18,7 @@ export default function Home(props) {
                     color="text.primary"
                     gutterBottom
                 >
-                    Announcements
+                    Announcements...
                 </Typography>
             </Container>
             <Grid container spacing={2} sx={{ p: 4, bgcolor: "#ccbc94" }}>
