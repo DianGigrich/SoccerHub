@@ -45,50 +45,14 @@ const theme = createTheme({
 
 function App() {
 
-  // work in progress TODO
-  // const [userId, setUserId] = useState(0);
-  // const [userName, setUserName] = useState("");
-  // const [isLoggedIn, setIsLoggedIn] = useState(false);
-  // const [token, setToken] = useState("");
-  // const [showHeader, setShowHeader] = useState(true);
-  // const [showFooter, setShowFooter] = useState(true);
-  // const [showNav, setShowNav] = useState(true);
-  // const [correct, setCorrect] = useState(false);
 
-  // const handleLoginSubmit = userObj => {
-  //   console.log('handle login')
-  //   API.login(userObj).then(data => {
-  //     console.log(data);
-  //     if (data.token) {
-  //       setUserId(data.user.id)
-  //       localStorage.setItem("userid", data.user.id)
-  //       setToken(data.token)
-  //       setIsLoggedIn(true)
-  //       setUserName(data.user.username)
-  //       localStorage.setItem("token", data.token)
-  //     }
-  //   })
-  // }
-
-  // const handleLogout = () => {
-  //   localStorage.removeItem("token");
-  //   setIsLoggedIn(false);
-  //   setUserId(0);
-  //   setToken("");
-  //   setUserName("")
-  // }
 
   return (
     <Container>
       <ThemeProvider theme={theme}>
         <CssBaseline />
       <Router> 
-        {/* {showHeader &&
-            <Header />
-          }
-          {showNav &&
-            <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
-          } */}
+
         <Header />
         <Navbar />
         <Routes>
